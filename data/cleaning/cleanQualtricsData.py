@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 
+# TODO: Alex to change this function into a class; utilize OOP methods and split this into helper functions to improve future debugging
+# TODO: Alex to add unit tests for this process and validation processes (other than current 1 exception case)
+
 def cleanQualtricsData(raw, roster, question_dictionary, needsMapping=True, needsNormalization=True):
 
     #assert all files are of .csv extension 
