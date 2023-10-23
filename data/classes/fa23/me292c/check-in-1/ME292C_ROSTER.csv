@@ -1,0 +1,56 @@
+Email,First,Last,Assignment,Team Number,FullName,TeammateNumber,Teammate1,Teammate2,Teammate3,Teammate4,Teammate5
+chunming_chen@berkeley.edu,Chun-Ming,Chen,1 - Personalizing Clothing Sizes,1,Chun-Ming Chen,1,Chun-Ming Chen,Claire Hsu,ginger lau,Mingyu Zhu,Zhengrong Tang
+clairewhsu@berkeley.edu,Claire,Hsu,1 - Personalizing Clothing Sizes,1,Claire Hsu,2,Chun-Ming Chen,Claire Hsu,ginger lau,Mingyu Zhu,Zhengrong Tang
+ginger.lau@berkeley.edu,ginger,lau,1 - Personalizing Clothing Sizes,1,ginger lau,3,Chun-Ming Chen,Claire Hsu,ginger lau,Mingyu Zhu,Zhengrong Tang
+mingyu_zhu@berkeley.edu,Mingyu,Zhu,1 - Personalizing Clothing Sizes,1,Mingyu Zhu,4,Chun-Ming Chen,Claire Hsu,ginger lau,Mingyu Zhu,Zhengrong Tang
+tddo0o@berkeley.edu,Zhengrong,Tang,1 - Personalizing Clothing Sizes,1,Zhengrong Tang,5,Chun-Ming Chen,Claire Hsu,ginger lau,Mingyu Zhu,Zhengrong Tang
+devangjhabakh@berkeley.edu,Devang Jhabakh,Jai,10 - Improving Product Life Cycle for Infant Furniture,10,Devang Jhabakh Jai,1,Devang Jhabakh Jai,Felipe Santamaria,Jerry (Chih-Yao) Chan,Matthew Atmadja,Sofia Lopez
+felipe_santa@berkeley.edu,Felipe,Santamaria,10 - Improving Product Life Cycle for Infant Furniture,10,Felipe Santamaria,2,Devang Jhabakh Jai,Felipe Santamaria,Jerry (Chih-Yao) Chan,Matthew Atmadja,Sofia Lopez
+j_chan@berkeley.edu,Jerry (Chih-Yao),Chan,10 - Improving Product Life Cycle for Infant Furniture,10,Jerry (Chih-Yao) Chan,3,Devang Jhabakh Jai,Felipe Santamaria,Jerry (Chih-Yao) Chan,Matthew Atmadja,Sofia Lopez
+matmadja@berkeley.edu,Matthew,Atmadja,10 - Improving Product Life Cycle for Infant Furniture,10,Matthew Atmadja,4,Devang Jhabakh Jai,Felipe Santamaria,Jerry (Chih-Yao) Chan,Matthew Atmadja,Sofia Lopez
+sofia_lopez@berkeley.edu,Sofia,Lopez,10 - Improving Product Life Cycle for Infant Furniture,10,Sofia Lopez,5,Devang Jhabakh Jai,Felipe Santamaria,Jerry (Chih-Yao) Chan,Matthew Atmadja,Sofia Lopez
+allisonyuan@berkeley.edu,Allison,Yuan,12 - Safety Solutions for Urban Settings,12,Allison Yuan,1,Allison Yuan,Ashna Reddy,Rajveer Oberoi,Yining Wang,
+ashna_reddy@berkeley.edu,Ashna,Reddy,12 - Safety Solutions for Urban Settings,12,Ashna Reddy,2,Allison Yuan,Ashna Reddy,Rajveer Oberoi,Yining Wang,
+oberoi@berkeley.edu,Rajveer,Oberoi,12 - Safety Solutions for Urban Settings,12,Rajveer Oberoi,3,Allison Yuan,Ashna Reddy,Rajveer Oberoi,Yining Wang,
+wwwyn@berkeley.edu,Yining,Wang,12 - Safety Solutions for Urban Settings,12,Yining Wang,4,Allison Yuan,Ashna Reddy,Rajveer Oberoi,Yining Wang,
+annakuang@berkeley.edu,Anna,Kuang,17 - Making Water Filtration More Efficient and Accessible,17,Anna Kuang,1,Anna Kuang,Austin Marr,Deep Chetan Shah,Nakul Jayakar,
+austinmarr@berkeley.edu,Austin,Marr,17 - Making Water Filtration More Efficient and Accessible,17,Austin Marr,2,Anna Kuang,Austin Marr,Deep Chetan Shah,Nakul Jayakar,
+deep_shah11@berkeley.edu,Deep Chetan,Shah,17 - Making Water Filtration More Efficient and Accessible,17,Deep Chetan Shah,3,Anna Kuang,Austin Marr,Deep Chetan Shah,Nakul Jayakar,
+nakul_jayakar@berkeley.edu,Nakul,Jayakar,17 - Making Water Filtration More Efficient and Accessible,17,Nakul Jayakar,4,Anna Kuang,Austin Marr,Deep Chetan Shah,Nakul Jayakar,
+hbalsara@berkeley.edu,Heli,Balsara,19 - Playing Cards for Visually Impaired,19,Heli Balsara,1,Heli Balsara,Jiajie Wang,Liam Hatakenaka,Taylor Waddell,
+jiajie@berkeley.edu,Jiajie,Wang,19 - Playing Cards for Visually Impaired,19,Jiajie Wang,2,Heli Balsara,Jiajie Wang,Liam Hatakenaka,Taylor Waddell,
+liam_hatakenaka@berkeley.edu,Liam,Hatakenaka,19 - Playing Cards for Visually Impaired,19,Liam Hatakenaka,3,Heli Balsara,Jiajie Wang,Liam Hatakenaka,Taylor Waddell,
+twaddell@berkeley.edu,Taylor,Waddell,19 - Playing Cards for Visually Impaired,19,Taylor Waddell,4,Heli Balsara,Jiajie Wang,Liam Hatakenaka,Taylor Waddell,
+quentin.daurat@berkeley.edu,Quentin,Daurat,6 - Using Passive Hydroponics in Urban Environments,6,Quentin Daurat,1,Quentin Daurat,Rupesh Shrestha,Sean Chu,Yashvardhan Saravan Nalina,
+rupesh@berkeley.edu,Rupesh,Shrestha,6 - Using Passive Hydroponics in Urban Environments,6,Rupesh Shrestha,2,Quentin Daurat,Rupesh Shrestha,Sean Chu,Yashvardhan Saravan Nalina,
+sean_chu@berkeley.edu,Sean,Chu,6 - Using Passive Hydroponics in Urban Environments,6,Sean Chu,3,Quentin Daurat,Rupesh Shrestha,Sean Chu,Yashvardhan Saravan Nalina,
+ysn_2003@berkeley.edu,Yashvardhan,Saravan Nalina,6 - Using Passive Hydroponics in Urban Environments,6,Yashvardhan Saravan Nalina,4,Quentin Daurat,Rupesh Shrestha,Sean Chu,Yashvardhan Saravan Nalina,
+asun23@berkeley.edu,Angela,Sun,7 - Preemptively Detect Blood Sugar Changes for Type 1 Diabetes,7,Angela Sun,1,Angela Sun,Ben Margolis,Mira Ercingoz,Serene Azafrani,
+benjamin_margolis@berkeley.edu,Ben,Margolis,7 - Preemptively Detect Blood Sugar Changes for Type 1 Diabetes,7,Ben Margolis,2,Angela Sun,Ben Margolis,Mira Ercingoz,Serene Azafrani,
+dercingoz@berkeley.edu,Mira,Ercingoz,7 - Preemptively Detect Blood Sugar Changes for Type 1 Diabetes,7,Mira Ercingoz,3,Angela Sun,Ben Margolis,Mira Ercingoz,Serene Azafrani,
+serene_azafrani@berkeley.edu,Serene,Azafrani,7 - Preemptively Detect Blood Sugar Changes for Type 1 Diabetes,7,Serene Azafrani,4,Angela Sun,Ben Margolis,Mira Ercingoz,Serene Azafrani,
+cue9911@berkeley.edu,Cue,Li,9 - Optimizing Assembly Processes,9,Cue Li,1,Cue Li,Harshvardhan Dhanpal Ankalkhope,Jerry Tang,Yongqi Zheng,
+harsh.ankalkhope@berkeley.edu,Harshvardhan Dhanpal,Ankalkhope,9 - Optimizing Assembly Processes,9,Harshvardhan Dhanpal Ankalkhope,2,Cue Li,Harshvardhan Dhanpal Ankalkhope,Jerry Tang,Yongqi Zheng,
+jerrytang@berkeley.edu,Jerry,Tang,9 - Optimizing Assembly Processes,9,Jerry Tang,3,Cue Li,Harshvardhan Dhanpal Ankalkhope,Jerry Tang,Yongqi Zheng,
+yongqi_zheng@berkeley.edu,Yongqi,Zheng,9 - Optimizing Assembly Processes,9,Yongqi Zheng,4,Cue Li,Harshvardhan Dhanpal Ankalkhope,Jerry Tang,Yongqi Zheng,
+antonia_tahia@berkeley.edu,Antonia,Ginsberg-Klemmt,HP1: Sustainable Behavior Change Team 1,20,Antonia Ginsberg-Klemmt,1,Antonia Ginsberg-Klemmt,Arsh Anis Khan,Michael Zhang,Witchayut Ngarmpornchai,
+arsh_khan@berkeley.edu,Arsh Anis,Khan,HP1: Sustainable Behavior Change Team 1,20,Arsh Anis Khan,2,Antonia Ginsberg-Klemmt,Arsh Anis Khan,Michael Zhang,Witchayut Ngarmpornchai,
+zhang.michael@berkeley.edu,Michael,Zhang,HP1: Sustainable Behavior Change Team 1,20,Michael Zhang,3,Antonia Ginsberg-Klemmt,Arsh Anis Khan,Michael Zhang,Witchayut Ngarmpornchai,
+witchayut_ng@berkeley.edu,Witchayut,Ngarmpornchai,HP1: Sustainable Behavior Change Team 1,20,Witchayut Ngarmpornchai,4,Antonia Ginsberg-Klemmt,Arsh Anis Khan,Michael Zhang,Witchayut Ngarmpornchai,
+felix.ellwood@berkeley.edu,Felix,Ellwood,HP1: Sustainable Behavior Change Team 2,21,Felix Ellwood,1,Felix Ellwood,Nicholas He,riley zhou,Roshan Mohan,
+nicholashe@berkeley.edu,Nicholas,He,HP1: Sustainable Behavior Change Team 2,21,Nicholas He,2,Felix Ellwood,Nicholas He,riley zhou,Roshan Mohan,
+panz@berkeley.edu,riley,zhou,HP1: Sustainable Behavior Change Team 2,21,riley zhou,3,Felix Ellwood,Nicholas He,riley zhou,Roshan Mohan,
+roshan-mohan@berkeley.edu,Roshan,Mohan,HP1: Sustainable Behavior Change Team 2,21,Roshan Mohan,4,Felix Ellwood,Nicholas He,riley zhou,Roshan Mohan,
+hoshing_lau@berkeley.edu,Ho Shing,Lau,HP2: Sharing Memories,22,Ho Shing Lau,1,Ho Shing Lau,Josefina Wu,Yoonwoo Kye,Yu-Han Wu,
+josefinawu@berkeley.edu,Josefina,Wu,HP2: Sharing Memories,22,Josefina Wu,2,Ho Shing Lau,Josefina Wu,Yoonwoo Kye,Yu-Han Wu,
+yoonwoo7h@berkeley.edu,Yoonwoo,Kye,HP2: Sharing Memories,22,Yoonwoo Kye,3,Ho Shing Lau,Josefina Wu,Yoonwoo Kye,Yu-Han Wu,
+calvin1060842@berkeley.edu,Yu-Han,Wu,HP2: Sharing Memories,22,Yu-Han Wu,4,Ho Shing Lau,Josefina Wu,Yoonwoo Kye,Yu-Han Wu,
+chongyul@berkeley.edu,Chongyuan,Li,HP3: Living Alone,23,Chongyuan Li,1,Chongyuan Li,Jiayi Liu,Wenlan Fan,Yue Fang,
+jy356@berkeley.edu,Jiayi,Liu,HP3: Living Alone,23,Jiayi Liu,2,Chongyuan Li,Jiayi Liu,Wenlan Fan,Yue Fang,
+wfan91@berkeley.edu,Wenlan,Fan,HP3: Living Alone,23,Wenlan Fan,3,Chongyuan Li,Jiayi Liu,Wenlan Fan,Yue Fang,
+yue_fang@berkeley.edu,Yue,Fang,HP3: Living Alone,23,Yue Fang,4,Chongyuan Li,Jiayi Liu,Wenlan Fan,Yue Fang,
+abhay_bhandari@berkeley.edu,Abhay Navinkumar,Bhandari,HP5: Signaling with Wearables,24,Abhay Navinkumar Bhandari,1,Abhay Navinkumar Bhandari,Andy Kim,Jui-Che Chang,Robert Suder,Santhosh Karthikeyan
+andy_kim@berkeley.edu,Andy,Kim,HP5: Signaling with Wearables,24,Andy Kim,2,Abhay Navinkumar Bhandari,Andy Kim,Jui-Che Chang,Robert Suder,Santhosh Karthikeyan
+brandon914@berkeley.edu,Jui-Che,Chang,HP5: Signaling with Wearables,24,Jui-Che Chang,3,Abhay Navinkumar Bhandari,Andy Kim,Jui-Che Chang,Robert Suder,Santhosh Karthikeyan
+bob.suder@berkeley.edu,Robert,Suder,HP5: Signaling with Wearables,24,Robert Suder,4,Abhay Navinkumar Bhandari,Andy Kim,Jui-Che Chang,Robert Suder,Santhosh Karthikeyan
+santhoshkart@berkeley.edu,Santhosh,Karthikeyan,HP5: Signaling with Wearables,24,Santhosh Karthikeyan,5,Abhay Navinkumar Bhandari,Andy Kim,Jui-Che Chang,Robert Suder,Santhosh Karthikeyan
