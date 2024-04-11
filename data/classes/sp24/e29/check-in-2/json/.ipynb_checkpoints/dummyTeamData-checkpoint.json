@@ -1,0 +1,164 @@
+const dummyTeamData = [
+  {
+    id: "sustainable-behavior-change",
+    name: "Sustainable Behavior Change",
+    teamMembers: [
+      {
+        name: "Anna Kuang",
+        email: "annakuang@berkeley.edu",
+        difficulty: ["Goal Setting", "Work Allocation", "Support"],
+      },
+      {
+        name: "Austin Marr",
+        email: "austinmarr@berkeley.edu",
+        difficulty: ["Team Role", "Enjoyment", "Team Communication"],
+      },
+      {
+        name: "Ankul Jayakar",
+        email: "ankuljayakar@berkeley.edu",
+        difficulty: ["Enjoyment", "Team Role"],
+      },
+      {
+        name: "Claire Hsu",
+        email: "clairehsu@berkeley.edu",
+        difficulty: ["Enjoyment", "Team Communication", "Team Role"],
+      },
+    ],
+    teamDifficulty: [
+      {
+        name: "Goal Setting",
+        proportion: 15,
+      },
+      {
+        name: "Team Role",
+        proportion: 20,
+      },
+      {
+        name: "Enjoyment",
+        proportion: 10,
+      },
+      {
+        name: "Team Communication",
+        proportion: 30,
+      },
+      {
+        name: "Work Allocation",
+        proportion: 20,
+      },
+      {
+        name: "Support",
+        proportion: 5,
+      },
+    ],
+    teamScore: "20/100",
+  },
+  {
+    id: "personalizing-clothing-size",
+    name: "Personalizing Clothing Size",
+    teamMembers: [
+      {
+        name: "Harry Potter",
+        email: "harrypotter@berkeley.edu",
+        difficulty: ["Goal Setting", "Enjoyment"],
+      },
+      {
+        name: "Ron Weasley",
+        email: "ronweasley@berkeley.edu",
+        difficulty: ["Enjoyment"],
+      },
+      {
+        name: "Hermione Granger",
+        email: "hermionegranger@berkeley.edu",
+        difficulty: ["Team Role", "Enjoyment", "Team Communication"],
+      },
+    ],
+    teamDifficulty: [
+      {
+        name: "Goal Setting",
+        proportion: 50,
+      },
+      {
+        name: "Team Role",
+        proportion: 20,
+      },
+      {
+        name: "Enjoyment",
+        proportion: 10,
+      },
+      {
+        name: "Team Communication",
+        proportion: 20,
+      },
+    ],
+    teamScore: "40/100",
+  },
+  {
+    id: "making-water-filtration-more-accessible",
+    name: "Making Water Filtration More Accessible",
+    teamMembers: [
+      {
+        name: "Anna Kuang",
+        email: "annakuang@berkeley.edu",
+        difficulty: ["Goal Setting", "Work Allocation"],
+      },
+      {
+        name: "Austin Marr",
+        email: "ak@berkeley.edu",
+        difficulty: [],
+      },
+      {
+        name: "Ankul Jayakar",
+        email: "aj@berkeley.edu",
+        difficulty: [],
+      },
+      {
+        name: "Claire Hsu",
+        email: "ch@berkeley.edu",
+        difficulty: ["Team Communication"],
+      },
+    ],
+    teamDifficulty: [
+      {
+        name: "Goal Setting",
+        proportion: 50,
+      },
+      {
+        name: "Work Allocation",
+        proportion: 20,
+      },
+      {
+        name: "Team Communication",
+        proportion: 30,
+      },
+    ],
+    teamScore: "60/100",
+  },
+  {
+    id: "improving-product-life-cycle-for-infant-furniture",
+    name: "Improving Product Life Cycle for Infant Furniture",
+    teamMembers: [
+      {
+        name: "Anna Kuang",
+        email: "ak@berkeley.edu",
+        difficulty: [],
+      },
+      {
+        name: "Austin Marr",
+        email: "am@berkeley.edu",
+        difficulty: [],
+      },
+      {
+        name: "Ankul Jayakar",
+        email: "aj@berkeley.edu",
+        difficulty: [],
+      },
+      {
+        name: "Claire Hsu",
+        email: "ch@berkeley.edu",
+        difficulty: [],
+      },
+    ],
+    teamDifficulty: [],
+    teamScore: "78/100",
+  },
+];
