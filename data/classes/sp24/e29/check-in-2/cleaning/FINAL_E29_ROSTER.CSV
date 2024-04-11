@@ -1,0 +1,135 @@
+,FullName,First name,Last Name,Email,TeamNumber,TeammateNumber,Teammate1,Teammate2,Teammate3,Teammate4
+0,Allan Zhong,Allan,Zhong,allanzhong@berkeley.edu, Team 1,1,Allan Zhong,Edwin Lopez,Jerrick Wang,Simran Kaur Khahira
+1,Edwin Lopez,Edwin,Lopez,eclopez19@berkeley.edu, Team 1,2,Allan Zhong,Edwin Lopez,Jerrick Wang,Simran Kaur Khahira
+2,Jerrick Wang,Jerrick,Wang,jerrick@berkeley.edu, Team 1,3,Allan Zhong,Edwin Lopez,Jerrick Wang,Simran Kaur Khahira
+3,Simran Kaur Khahira,Simran,Kaur Khahira,simrankk@berkeley.edu, Team 1,4,Allan Zhong,Edwin Lopez,Jerrick Wang,Simran Kaur Khahira
+4,Miro Garrett,Miro,Garrett,miroygarrett@berkeley.edu, Team 10,1,Miro Garrett,Taiki Yamamoto,Taylor Jazan,Toren Andersen
+5,Taiki Yamamoto,Taiki,Yamamoto,taiyama@berkeley.edu, Team 10,2,Miro Garrett,Taiki Yamamoto,Taylor Jazan,Toren Andersen
+6,Taylor Jazan,Taylor,Jazan,tjazan@berkeley.edu, Team 10,3,Miro Garrett,Taiki Yamamoto,Taylor Jazan,Toren Andersen
+7,Toren Andersen,Toren,Andersen,toren.andersen@berkeley.edu, Team 10,4,Miro Garrett,Taiki Yamamoto,Taylor Jazan,Toren Andersen
+8,Keval Shah,Keval,Shah,keval@berkeley.edu, Team 11,1,Keval Shah,Luke Goldade,Menooa Avrand,Omar Cochinwala
+9,Luke Goldade,Luke,Goldade,luke.goldade@berkeley.edu, Team 11,2,Keval Shah,Luke Goldade,Menooa Avrand,Omar Cochinwala
+10,Menooa Avrand,Menooa,Avrand,menooaavrand@berkeley.edu, Team 11,3,Keval Shah,Luke Goldade,Menooa Avrand,Omar Cochinwala
+11,Omar Cochinwala,Omar,Cochinwala,ocochinwala04@berkeley.edu, Team 11,4,Keval Shah,Luke Goldade,Menooa Avrand,Omar Cochinwala
+12,Diego Sainos,Diego,Sainos,dsainos1@berkeley.edu, Team 12,1,Diego Sainos,Mayukh Dattachaudhuri,Saeed Aldhuhoori,
+13,Mayukh Dattachaudhuri,Mayukh,Dattachaudhuri,mdcin@berkeley.edu, Team 12,2,Diego Sainos,Mayukh Dattachaudhuri,Saeed Aldhuhoori,
+14,Saeed Aldhuhoori,Saeed,Aldhuhoori,aldhuhoori@berkeley.edu, Team 12,3,Diego Sainos,Mayukh Dattachaudhuri,Saeed Aldhuhoori,
+15,Emiliano Melendrez,Emiliano,Melendrez,emilianomelendrez@berkeley.edu, Team 13,1,Emiliano Melendrez,Kaan Yaveroglu,Ramiro Contreras,Sonia Baskaran Appakutty
+16,Kaan Yaveroglu,Kaan,Yaveroglu,kaanyaveroglu@berkeley.edu, Team 13,2,Emiliano Melendrez,Kaan Yaveroglu,Ramiro Contreras,Sonia Baskaran Appakutty
+17,Ramiro Contreras,Ramiro,Contreras,ramiro@berkeley.edu, Team 13,3,Emiliano Melendrez,Kaan Yaveroglu,Ramiro Contreras,Sonia Baskaran Appakutty
+18,Sonia Baskaran Appakutty,Sonia,Baskaran Appakutty,soniayashoda@berkeley.edu, Team 13,4,Emiliano Melendrez,Kaan Yaveroglu,Ramiro Contreras,Sonia Baskaran Appakutty
+19,Cy Khaldi,Cy,Khaldi,cykhaldi@berkeley.edu, Team 14,1,Cy Khaldi,Khaled Wazzan,Matthew Hong,Yamilex Cruz Ramirez
+20,Khaled Wazzan,Khaled,Wazzan,khaled.wazzan@berkeley.edu, Team 14,2,Cy Khaldi,Khaled Wazzan,Matthew Hong,Yamilex Cruz Ramirez
+21,Matthew Hong,Matthew,Hong,kisur2001@berkeley.edu, Team 14,3,Cy Khaldi,Khaled Wazzan,Matthew Hong,Yamilex Cruz Ramirez
+22,Yamilex Cruz Ramirez,Yamilex,Cruz Ramirez,cruzryamilex@berkeley.edu, Team 14,4,Cy Khaldi,Khaled Wazzan,Matthew Hong,Yamilex Cruz Ramirez
+23,Elisa Kong,Elisa,Kong,elisakong@berkeley.edu, Team 15,1,Elisa Kong,Kijun Lew,Matthew Amaro,Sahaj Singh Sidhu
+24,Kijun Lew,Kijun,Lew,kijunlew@berkeley.edu, Team 15,2,Elisa Kong,Kijun Lew,Matthew Amaro,Sahaj Singh Sidhu
+25,Matthew Amaro,Matthew,Amaro,matthew_amaro@berkeley.edu, Team 15,3,Elisa Kong,Kijun Lew,Matthew Amaro,Sahaj Singh Sidhu
+26,Sahaj Singh Sidhu,Sahaj,Singh Sidhu,ssidhu04@berkeley.edu, Team 15,4,Elisa Kong,Kijun Lew,Matthew Amaro,Sahaj Singh Sidhu
+27,Deena Sun,Deena,Sun,deenasun@berkeley.edu, Team 16,1,Deena Sun,Megan Ho,Peter Nunez-Ayala,Shayan Moghaddam
+28,Megan Ho,Megan,Ho,meganho@berkeley.edu, Team 16,2,Deena Sun,Megan Ho,Peter Nunez-Ayala,Shayan Moghaddam
+29,Peter Nunez-Ayala,Peter,Nunez-Ayala,peterayala@berkeley.edu, Team 16,3,Deena Sun,Megan Ho,Peter Nunez-Ayala,Shayan Moghaddam
+30,Shayan Moghaddam,Shayan,Moghaddam,shayan.moghaddam@berkeley.edu, Team 16,4,Deena Sun,Megan Ho,Peter Nunez-Ayala,Shayan Moghaddam
+31,Darin Brion,Darin,Brion,darinbrion@berkeley.edu, Team 17,1,Darin Brion,Diego Gonzalez,Dylan Nokleby,
+32,Diego Gonzalez,Diego,Gonzalez,diegogonzalez0719@berkeley.edu, Team 17,2,Darin Brion,Diego Gonzalez,Dylan Nokleby,
+33,Dylan Nokleby,Dylan,Nokleby,dylannokleby@berkeley.edu, Team 17,3,Darin Brion,Diego Gonzalez,Dylan Nokleby,
+34,Carlos Avina,Carlos,Avina,cavina1129@berkeley.edu, Team 18,1,Carlos Avina,Gabriel Gonzalez,Kian Rafian,Nithika Kiruveedula
+35,Gabriel Gonzalez,Gabriel,Gonzalez,gabeagonzo@berkeley.edu, Team 18,2,Carlos Avina,Gabriel Gonzalez,Kian Rafian,Nithika Kiruveedula
+36,Kian Rafian,Kian,Rafian,krafian@berkeley.edu, Team 18,3,Carlos Avina,Gabriel Gonzalez,Kian Rafian,Nithika Kiruveedula
+37,Nithika Kiruveedula,Nithika,Kiruveedula,nithikak@berkeley.edu, Team 18,4,Carlos Avina,Gabriel Gonzalez,Kian Rafian,Nithika Kiruveedula
+38,Daniela Uyuni,Daniela,Uyuni,danielauyuni@berkeley.edu, Team 19,1,Daniela Uyuni,Jackson Christopher,Julian Bourret,Wen Cao
+39,Jackson Christopher,Jackson,Christopher,jacksonchristopher@berkeley.edu, Team 19,2,Daniela Uyuni,Jackson Christopher,Julian Bourret,Wen Cao
+40,Julian Bourret,Julian,Bourret,jbourret@berkeley.edu, Team 19,3,Daniela Uyuni,Jackson Christopher,Julian Bourret,Wen Cao
+41,Wen Cao,Wen,Cao,wen_cao_wendy@berkeley.edu, Team 19,4,Daniela Uyuni,Jackson Christopher,Julian Bourret,Wen Cao
+42,Ashley De Jesus,Ashley,De Jesus,adejesus22@berkeley.edu, Team 2,1,Ashley De Jesus,Ian Lind,Rohan Karra,Rolando Torres
+43,Ian Lind,Ian,Lind,ianlind@berkeley.edu, Team 2,2,Ashley De Jesus,Ian Lind,Rohan Karra,Rolando Torres
+44,Rohan Karra,Rohan,Karra,rkarra@berkeley.edu, Team 2,3,Ashley De Jesus,Ian Lind,Rohan Karra,Rolando Torres
+45,Rolando Torres,Rolando,Torres,rolandojtorres@berkeley.edu, Team 2,4,Ashley De Jesus,Ian Lind,Rohan Karra,Rolando Torres
+46,Jazlyn Peraza,Jazlyn,Peraza,jazperaza@berkeley.edu, Team 20,1,Jazlyn Peraza,Maylee Tan,Sarina Lin,Shweta Arun
+47,Maylee Tan,Maylee,Tan,mayleet8@berkeley.edu, Team 20,2,Jazlyn Peraza,Maylee Tan,Sarina Lin,Shweta Arun
+48,Sarina Lin,Sarina,Lin,sarinalin@berkeley.edu, Team 20,3,Jazlyn Peraza,Maylee Tan,Sarina Lin,Shweta Arun
+49,Shweta Arun,Shweta,Arun,sarun@berkeley.edu, Team 20,4,Jazlyn Peraza,Maylee Tan,Sarina Lin,Shweta Arun
+50,Jaden Nguyen,Jaden,Nguyen,jadennguyen@berkeley.edu, Team 21,1,Jaden Nguyen,Malia Gundayao,Raul Hernandez,Siddharth Vembu
+51,Malia Gundayao,Malia,Gundayao,maliagundayao@berkeley.edu, Team 21,2,Jaden Nguyen,Malia Gundayao,Raul Hernandez,Siddharth Vembu
+52,Raul Hernandez,Raul,Hernandez,railt@berkeley.edu, Team 21,3,Jaden Nguyen,Malia Gundayao,Raul Hernandez,Siddharth Vembu
+53,Siddharth Vembu,Siddharth,Vembu,siddhu@berkeley.edu, Team 21,4,Jaden Nguyen,Malia Gundayao,Raul Hernandez,Siddharth Vembu
+54,Bram Klein,Bram,Klein,bramklein@berkeley.edu, Team 22,1,Bram Klein,Emma Pham,Ryan Rundle,Valeria Jimenez Beltran
+55,Emma Pham,Emma,Pham,emma.l.pham@berkeley.edu, Team 22,2,Bram Klein,Emma Pham,Ryan Rundle,Valeria Jimenez Beltran
+56,Ryan Rundle,Ryan,Rundle,rrundle@berkeley.edu, Team 22,3,Bram Klein,Emma Pham,Ryan Rundle,Valeria Jimenez Beltran
+57,Valeria Jimenez Beltran,Valeria,Jimenez Beltran,valeria_jimenez22@berkeley.edu, Team 22,4,Bram Klein,Emma Pham,Ryan Rundle,Valeria Jimenez Beltran
+58,Adrian Hernandez,Adrian,Hernandez,adrianh@berkeley.edu, Team 23,1,Adrian Hernandez,Gabriela Feijo,Scott Schuster,
+59,Gabriela Feijo,Gabriela,Feijo,gabrielasfeijo@berkeley.edu, Team 23,2,Adrian Hernandez,Gabriela Feijo,Scott Schuster,
+60,Scott Schuster,Scott,Schuster,scott.schuster@berkeley.edu, Team 23,3,Adrian Hernandez,Gabriela Feijo,Scott Schuster,
+61,Akshat Kumar,Akshat,Kumar,akshat.kumar@berkeley.edu, Team 24,1,Akshat Kumar,Kaylie Ching,Saketh Somayajula,Sonali Das
+62,Kaylie Ching,Kaylie,Ching,kaylieching@berkeley.edu, Team 24,2,Akshat Kumar,Kaylie Ching,Saketh Somayajula,Sonali Das
+63,Saketh Somayajula,Saketh,Somayajula,saketh.somayajula@berkeley.edu, Team 24,3,Akshat Kumar,Kaylie Ching,Saketh Somayajula,Sonali Das
+64,Sonali Das,Sonali,Das,sonalidas@berkeley.edu, Team 24,4,Akshat Kumar,Kaylie Ching,Saketh Somayajula,Sonali Das
+65,Elizabeth Sun,Elizabeth,Sun,elizabeth.sun@berkeley.edu, Team 25,1,Elizabeth Sun,Emily Harris,Tavleen Kaur,
+66,Emily Harris,Emily,Harris,emilyharris@berkeley.edu, Team 25,2,Elizabeth Sun,Emily Harris,Tavleen Kaur,
+67,Tavleen Kaur,Tavleen,Kaur,tavleenk@berkeley.edu, Team 25,3,Elizabeth Sun,Emily Harris,Tavleen Kaur,
+68,Eyan Documet,Eyan,Documet,erdocumet@berkeley.edu, Team 26,1,Eyan Documet,Joe Domke,Skye Heiles,Tatiana El Khoury
+69,Joe Domke,Joe,Domke,jdomke@berkeley.edu, Team 26,2,Eyan Documet,Joe Domke,Skye Heiles,Tatiana El Khoury
+70,Skye Heiles,Skye,Heiles,heilesky26@berkeley.edu, Team 26,3,Eyan Documet,Joe Domke,Skye Heiles,Tatiana El Khoury
+71,Tatiana El Khoury,Tatiana,El Khoury,tatianaelkhoury21@berkeley.edu, Team 26,4,Eyan Documet,Joe Domke,Skye Heiles,Tatiana El Khoury
+72,Leo Ke,Leo,Ke,leoke@berkeley.edu, Team 27,1,Leo Ke,Reagan Bagnol,Winslow Barnwood,Zephan Bornfreund
+73,Reagan Bagnol,Reagan,Bagnol,reagan.bagnol@berkeley.edu, Team 27,2,Leo Ke,Reagan Bagnol,Winslow Barnwood,Zephan Bornfreund
+74,Winslow Barnwood,Winslow,Barnwood,wsbarnwood@berkeley.edu, Team 27,3,Leo Ke,Reagan Bagnol,Winslow Barnwood,Zephan Bornfreund
+75,Zephan Bornfreund,Zephan,Bornfreund,zephanbornfreund@berkeley.edu, Team 27,4,Leo Ke,Reagan Bagnol,Winslow Barnwood,Zephan Bornfreund
+76,Carla Dagandan,Carla,Dagandan,cadagandan8283@berkeley.edu, Team 28,1,Carla Dagandan,Jeremy Huang,Samuel Harris,
+77,Jeremy Huang,Jeremy,Huang,jeremyhuang@berkeley.edu, Team 28,2,Carla Dagandan,Jeremy Huang,Samuel Harris,
+78,Samuel Harris,Samuel,Harris,samuelharr@berkeley.edu, Team 28,3,Carla Dagandan,Jeremy Huang,Samuel Harris,
+79,Bailey Monti,Bailey,Monti,bkmonti@berkeley.edu, Team 29,1,Bailey Monti,Kara Gaiser,Sheza Saiyed,
+80,Kara Gaiser,Kara,Gaiser,gaiserkara@berkeley.edu, Team 29,2,Bailey Monti,Kara Gaiser,Sheza Saiyed,
+81,Sheza Saiyed,Sheza,Saiyed,sheza@berkeley.edu, Team 29,3,Bailey Monti,Kara Gaiser,Sheza Saiyed,
+82,Jared Kazhe,Jared,Kazhe,jaredkazhe@berkeley.edu, Team 3,1,Jared Kazhe,Luz Torralba,Montek Sethi,Rayme Aquino
+83,Luz Torralba,Luz,Torralba,luztorralba@berkeley.edu, Team 3,2,Jared Kazhe,Luz Torralba,Montek Sethi,Rayme Aquino
+84,Montek Sethi,Montek,Sethi,monteksethi@berkeley.edu, Team 3,3,Jared Kazhe,Luz Torralba,Montek Sethi,Rayme Aquino
+85,Rayme Aquino,Rayme,Aquino,aquinorayme@berkeley.edu, Team 3,4,Jared Kazhe,Luz Torralba,Montek Sethi,Rayme Aquino
+86,Aananya Lakhani,Aananya,Lakhani,alakhani748@berkeley.edu, Team 30,1,Aananya Lakhani,Annie Chen,Kate Gerhardt,Kevin Yi
+87,Annie Chen,Annie,Chen,anniec@berkeley.edu, Team 30,2,Aananya Lakhani,Annie Chen,Kate Gerhardt,Kevin Yi
+88,Kate Gerhardt,Kate,Gerhardt,katherinegerhardt@berkeley.edu, Team 30,3,Aananya Lakhani,Annie Chen,Kate Gerhardt,Kevin Yi
+89,Kevin Yi,Kevin,Yi,0000817108berkeley@berkeley.edu, Team 30,4,Aananya Lakhani,Annie Chen,Kate Gerhardt,Kevin Yi
+90,Griffin Zajac,Griffin,Zajac,gzajac@berkeley.edu, Team 31,1,Griffin Zajac,Riya Jain,Tom Springer,Vihaal Vellanki
+91,Riya Jain,Riya,Jain,rsjain@berkeley.edu, Team 31,2,Griffin Zajac,Riya Jain,Tom Springer,Vihaal Vellanki
+92,Tom Springer,Tom,Springer,tom_springer@berkeley.edu, Team 31,3,Griffin Zajac,Riya Jain,Tom Springer,Vihaal Vellanki
+93,Vihaal Vellanki,Vihaal,Vellanki,vihaalvellanki@berkeley.edu, Team 31,4,Griffin Zajac,Riya Jain,Tom Springer,Vihaal Vellanki
+94,Ji Choi,Ji,Choi,jichoi2002926@berkeley.edu, Team 32,1,Ji Choi,Nafees Ahmad,Reagan Bowerbank,Venika Gogineni
+95,Nafees Ahmad,Nafees,Ahmad,nafees10ahmad@berkeley.edu, Team 32,2,Ji Choi,Nafees Ahmad,Reagan Bowerbank,Venika Gogineni
+96,Reagan Bowerbank,Reagan,Bowerbank,rrbowerbank@berkeley.edu, Team 32,3,Ji Choi,Nafees Ahmad,Reagan Bowerbank,Venika Gogineni
+97,Venika Gogineni,Venika,Gogineni,venika@berkeley.edu, Team 32,4,Ji Choi,Nafees Ahmad,Reagan Bowerbank,Venika Gogineni
+98,Ethan Platt,Ethan,Platt,ethancplatt@berkeley.edu, Team 33,1,Ethan Platt,Javid Hamidov,Larry Bermudez,Mirwais Lodin
+99,Javid Hamidov,Javid,Hamidov,javid_hamidov@berkeley.edu, Team 33,2,Ethan Platt,Javid Hamidov,Larry Bermudez,Mirwais Lodin
+100,Larry Bermudez,Larry,Bermudez,larrybermudez.10@berkeley.edu, Team 33,3,Ethan Platt,Javid Hamidov,Larry Bermudez,Mirwais Lodin
+101,Mirwais Lodin,Mirwais,Lodin,mlodin@berkeley.edu, Team 33,4,Ethan Platt,Javid Hamidov,Larry Bermudez,Mirwais Lodin
+102,Elina Morishita,Elina,Morishita,elinamorishita@berkeley.edu, Team 34,1,Elina Morishita,Joshua Leavitt,Sage Holter,Yousuf Abubakr
+103,Joshua Leavitt,Joshua,Leavitt,joshua.leavitt@berkeley.edu, Team 34,2,Elina Morishita,Joshua Leavitt,Sage Holter,Yousuf Abubakr
+104,Sage Holter,Sage,Holter,sageholter@berkeley.edu, Team 34,3,Elina Morishita,Joshua Leavitt,Sage Holter,Yousuf Abubakr
+105,Yousuf Abubakr,Yousuf,Abubakr,yousufabubakr123@berkeley.edu, Team 34,4,Elina Morishita,Joshua Leavitt,Sage Holter,Yousuf Abubakr
+106,Avinash Srikanth,Avinash,Srikanth,avinashsrikanth@berkeley.edu, Team 35,1,Avinash Srikanth,Ian Bolano,Nandita Venkataraman,Samuel Mankoff
+107,Ian Bolano,Ian,Bolano,ianpb@berkeley.edu, Team 35,2,Avinash Srikanth,Ian Bolano,Nandita Venkataraman,Samuel Mankoff
+108,Nandita Venkataraman,Nandita,Venkataraman,vnandita11@berkeley.edu, Team 35,3,Avinash Srikanth,Ian Bolano,Nandita Venkataraman,Samuel Mankoff
+109,Samuel Mankoff,Samuel,Mankoff,samuel.mankoff@berkeley.edu, Team 35,4,Avinash Srikanth,Ian Bolano,Nandita Venkataraman,Samuel Mankoff
+110,Aarush Panda,Aarush,Panda,aarush.p@berkeley.edu, Team 4,1,Aarush Panda,Kristian Seppanen,Mireya Navarro,Warren Kuang
+111,Kristian Seppanen,Kristian,Seppanen,kristian.seppanen@berkeley.edu, Team 4,2,Aarush Panda,Kristian Seppanen,Mireya Navarro,Warren Kuang
+112,Mireya Navarro,Mireya,Navarro,mireya.navarro.mx@berkeley.edu, Team 4,3,Aarush Panda,Kristian Seppanen,Mireya Navarro,Warren Kuang
+113,Warren Kuang,Warren,Kuang,warrenkuang@berkeley.edu, Team 4,4,Aarush Panda,Kristian Seppanen,Mireya Navarro,Warren Kuang
+114,Arundhati Parikh,Arundhati,Parikh,arundhatip@berkeley.edu, Team 5,1,Arundhati Parikh,Athul Krishnan,Ben Kao,Brian Huynh
+115,Athul Krishnan,Athul,Krishnan,athul@berkeley.edu, Team 5,2,Arundhati Parikh,Athul Krishnan,Ben Kao,Brian Huynh
+116,Ben Kao,Ben,Kao,benjaminkao@berkeley.edu, Team 5,3,Arundhati Parikh,Athul Krishnan,Ben Kao,Brian Huynh
+117,Brian Huynh,Brian,Huynh,brian_mechgeeko@berkeley.edu, Team 5,4,Arundhati Parikh,Athul Krishnan,Ben Kao,Brian Huynh
+118,Catherine Harada,Catherine,Harada,csharada05@berkeley.edu, Team 6,1,Catherine Harada,Gabriel Sianez,Joshua Oh,Rafael Petrosian
+119,Gabriel Sianez,Gabriel,Sianez,gabrielsianez@berkeley.edu, Team 6,2,Catherine Harada,Gabriel Sianez,Joshua Oh,Rafael Petrosian
+120,Joshua Oh,Joshua,Oh,jojoh2203@berkeley.edu, Team 6,3,Catherine Harada,Gabriel Sianez,Joshua Oh,Rafael Petrosian
+121,Rafael Petrosian,Rafael,Petrosian,rafael1@berkeley.edu, Team 6,4,Catherine Harada,Gabriel Sianez,Joshua Oh,Rafael Petrosian
+122,Alex Kao,Alex,Kao,akao1@berkeley.edu, Team 7,1,Alex Kao,Sophya Mirza,Thomas Yu,William Pacini
+123,Sophya Mirza,Sophya,Mirza,sophyamirza@berkeley.edu, Team 7,2,Alex Kao,Sophya Mirza,Thomas Yu,William Pacini
+124,Thomas Yu,Thomas,Yu,thomaszy@berkeley.edu, Team 7,3,Alex Kao,Sophya Mirza,Thomas Yu,William Pacini
+125,William Pacini,William,Pacini,william.pacini@berkeley.edu, Team 7,4,Alex Kao,Sophya Mirza,Thomas Yu,William Pacini
+126,Adrian Guan,Adrian,Guan,ajguan@berkeley.edu, Team 8,1,Adrian Guan,Ayush Patel,Maithili Kumar,Siddhant Vasudevan
+127,Ayush Patel,Ayush,Patel,ayupat30@berkeley.edu, Team 8,2,Adrian Guan,Ayush Patel,Maithili Kumar,Siddhant Vasudevan
+128,Maithili Kumar,Maithili,Kumar,maithili@berkeley.edu, Team 8,3,Adrian Guan,Ayush Patel,Maithili Kumar,Siddhant Vasudevan
+129,Siddhant Vasudevan,Siddhant,Vasudevan,siddhant.vasudevan@berkeley.edu, Team 8,4,Adrian Guan,Ayush Patel,Maithili Kumar,Siddhant Vasudevan
+130,Allan Ramirez,Allan,Ramirez,allan.sram16@berkeley.edu, Team 9,1,Allan Ramirez,Arnav Patel,Owen Lachs,Tyler Peng
+131,Arnav Patel,Arnav,Patel,arnavp45@berkeley.edu, Team 9,2,Allan Ramirez,Arnav Patel,Owen Lachs,Tyler Peng
+132,Owen Lachs,Owen,Lachs,owenlachs@berkeley.edu, Team 9,3,Allan Ramirez,Arnav Patel,Owen Lachs,Tyler Peng
+133,Tyler Peng,Tyler,Peng,tyler.peng@berkeley.edu, Team 9,4,Allan Ramirez,Arnav Patel,Owen Lachs,Tyler Peng
