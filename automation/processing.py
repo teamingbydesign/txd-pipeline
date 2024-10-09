@@ -79,12 +79,12 @@ def cleanQualtricsData(
 
     # Imports and Instantiations
     # TODO: this has to get fixed, first row is repeat of headers, 2nd is random import stuff
-    raw = pd.read_csv(raw)[2:]
-    question_dictionary = pd.read_csv(question_dictionary)
-    roster = pd.read_csv(roster)
+    raw_df = pd.read_csv(raw)[2:]
+    question_dictionary_df = pd.read_csv(question_dictionary)
+    roster_df = pd.read_csv(roster)
 
     # Subset raw data to just student email, student first name, student last name, and all question responses
-    subset_data = raw.filter(regex=r'Email|First|last|Q\d+(_\d+)?', axis=1)
+    subset_data = raw_df.filter(regex=r'Email|First|last|Q\d+(_\d+)?', axis=1)
 
     # Replace question column names in subset data with X.Y instead of QX_Y
     subset_data.columns = [col.replace('Q', '').replace('_', '.') for col in list(subset_data.columns)]
@@ -93,10 +93,10 @@ def cleanQualtricsData(
     cleaned = subset_data
 
     # Join in TeamNumber and TeammateNumber from roster; drop rows of metadata
-    roster_email_field = [col for col in list(roster.columns) if 'EMAIL' in col.upper()][0]
+    roster_email_field = [col for col in list(roster_df.columns) if 'EMAIL' in col.upper()][0]
     cleaned_email_field = [col for col in list(cleaned.columns) if 'EMAIL' in col.upper()][0]
 
-    full_cleaned = pd.merge(roster[[roster_email_field, 'TeamNumber', 'TeammateNumber']],
+    full_cleaned = pd.merge(roster_df[[roster_email_field, 'TeamNumber', 'TeammateNumber']],
                             cleaned,
                             how="outer",
                             left_on=roster_email_field,
@@ -108,7 +108,7 @@ def cleanQualtricsData(
 
     # If the raw data has "Agree"/"Disagree" in quantitative question columns, map these to integers 1-X where X is "out_of"
     if needs_mapping:
-        full_cleaned = _handle_quantitative(full_cleaned, question_dictionary, needs_normalization)
+        full_cleaned = _handle_quantitative(full_cleaned, question_dictionary_df, needs_normalization)
 
     # For NA values (students that didn't complete survey, left question empty), fill in with "No Response"
     # TODO: impute by dtype of column rather than general "No Response"
