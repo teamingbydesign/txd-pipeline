@@ -3,7 +3,8 @@ import os
 import pandas as pd
 import numpy as np
 
-# TODO: Alex to change this function into a class; utilize OOP methods and split this into helper functions to improve future debugging
+# TODO: Alex to change this function into a class;
+#  utilize OOP methods and split this into helper functions to improve future debugging
 # TODO: Alex to add unit tests for this process and validation processes (other than current 1 exception case)
 
 # suggestion: move these mappings to another CSV to join with question_dictionary
@@ -38,11 +39,22 @@ def _handle_quantitative(
         full_cleaned: pd.DataFrame,
         question_dictionary: pd.DataFrame,
         needs_normalization: bool
-):
+) -> pd.DataFrame:
+    """
+    Helper function used by cleanQualtricsData to map qualitative responses into quantities
+    to be used for metrics.
+
+    :param full_cleaned: DataFrame of cleaned and formatted survey responses prior
+           to handling quantitative
+    :param question_dictionary: DataFrame of question metadata (used for checking any quantitative questions)
+    :param needs_normalization: Flag determining if quantitative responses should be centered on 0.
+    :return: DataFrame after quantitative mapping is done
+    """
     quantitative_questions = list(
         question_dictionary[question_dictionary["type"] == "quantitative"]["question_id"]
     )
 
+    # convert qualitative response to quantity based on 5-scale or 7-scale mapping
     for question in quantitative_questions:
         denominator = int(question_dictionary[question_dictionary["question_id"] == question]["out_of"].iloc[0])
         question_str = str(question)
@@ -63,13 +75,28 @@ def _handle_quantitative(
 
     return full_cleaned
 
-def cleanQualtricsData(
+
+def clean_qualtrics_data(
         raw: str | os.PathLike,
         roster: str | os.PathLike,
         question_dictionary: str | os.PathLike,
         needs_mapping: bool = True,
         needs_normalization: bool = True
-):
+) -> pd.DataFrame:
+    """
+    This function handles all data cleaning steps from the raw survey responses,
+    roster, and question details to combine into one main csv for
+    calculating metrics for the faculty report.
+
+
+    :param raw: Path of raw survey responses as csv
+    :param roster: Path of roster of students in class as csv
+    :param question_dictionary: Path of question descriptions (qualitative/quantitative, etc.) as csv
+    :param needs_mapping: Flag that handles mapping of qualitative responses to quantitative columns
+    :param needs_normalization: Flag that normalizes the quantitative values after mapping,
+           can only be used if needs_mapping is True
+    :return: DataFrame after all cleaning is done
+    """
 
     # assert all files are of .csv extension
     assert all(
@@ -106,7 +133,8 @@ def cleanQualtricsData(
     # Sort df by TeamNumber then TeammateNumber starting from Team1
     full_cleaned = full_cleaned.sort_values(["TeamNumber", "TeammateNumber"]).reset_index().drop("index", axis=1)
 
-    # If the raw data has "Agree"/"Disagree" in quantitative question columns, map these to integers 1-X where X is "out_of"
+    # If the raw data has "Agree"/"Disagree" in quantitative question columns,
+    # map these to integers 1-X where X is "out_of"
     if needs_mapping:
         full_cleaned = _handle_quantitative(full_cleaned, question_dictionary_df, needs_normalization)
 

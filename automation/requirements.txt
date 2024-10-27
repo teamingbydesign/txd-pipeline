@@ -1,0 +1,3 @@
+pymongo
+google-cloud-storage
+functions-framework

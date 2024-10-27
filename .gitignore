@@ -1,2 +1,4 @@
 .venv
 legacy-data-pipeline/.ipynb_checkpoints
+.idea
+**/__pycache__
