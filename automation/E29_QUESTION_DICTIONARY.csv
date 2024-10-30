@@ -1,45 +1,45 @@
-question_id,question,category,type,scale,out_of,notes
-1,introduction and background,,,,,"FOR COMPLETE SCORING:  Option 1: 1 = strongly agree, 2 = agree, 3 = somewhat agree, 4 = neither agree nor disagree, 5 = somewhat disagree, 6 = disagree, 7 = strongly disagree Option 2: 1 = much better, 2 = moderately better, 3 = slightly better, 4 = about the same, 5 = slightly worse, 6 = moderately worse, 7 = much worse Option 3: 1 = always, 2 = most of the time, 3 = about half of the time, 4 = sometimes, 5 = never"
-2.1,Our team is clear about the shared goals for our work together,Goal Setting,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-2.2,We each know about one another's individual goals for our work together,Goal Setting,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-2.3,I feel supported by my teammates in the pursuit of my individual goals for this project,Goal Setting,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-3,Please state in 1-2 sentences what you believe your team's shared goals are for this project.,Goal Setting,qualitative,No scale (qualitative),,No scale (qualitative)
-4.1,We have good communication amongst ourselves,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-4.2,We fairly distribute work amongst ourselves,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-4.3,I am clear about the roles I play on my team,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-4.4,I enjoy working with my teammates,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-5.1,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 1,Team Process,quantitative,1-100,100,"1 = no contribution, 100 = total contribution"
-5.2,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 2,Team Process,quantitative,1-100,100,"1 = no contribution, 100 = total contribution"
-5.3,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 3,Team Process,quantitative,1-100,100,"1 = no contribution, 100 = total contribution"
-5.4,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 4,Team Process,quantitative,1-100,100,"1 = no contribution, 100 = total contribution"
-6,Name one concrete and specific thing that your team did well that you will carry forward into future teams.,Individual Reflection,qualitative,No scale (qualitative),,No scale (qualitative)
-7,Name one concrete and specific thing that you would like your team to do differently.,Individual Reflection,qualitative,No scale (qualitative),,No scale (qualitative)
-14.1,"For each of your teammates and yourself, write one line that describes their primary contribution to the team's work together. For teammate 1",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative)
-14.2,"For each of your teammates and yourself, write one line that describes their primary contribution to the team's work together. For teammate 2",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative)
-14.3,"For each of your teammates and yourself, write one line that describes their primary contribution to the team's work together. For teammate 3",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative)
-14.4,"For each of your teammates and yourself, write one line that describes their primary contribution to the team's work together. For teammate 4",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative)
-15.1,"For each of your teammates listed below, write one line that describes something you might like to see them do differently in the future. For teammate 1",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative)
-15.2,"For each of your teammates listed below, write one line that describes something you might like to see them do differently in the future. For teammate 2",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative)
-15.3,"For each of your teammates listed below, write one line that describes something you might like to see them do differently in the future. For teammate 3",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative)
-15.4,"For each of your teammates listed below, write one line that describes something you might like to see them do differently in the future. For teammate 4",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative)
-16.1,Took initiative to help the team problem solve. For teammate 1,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-16.2,Took initiative to help the team problem solve. For teammate 2,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-16.3,Took initiative to help the team problem solve. For teammate 3,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-16.4,Took initiative to help the team problem solve. For teammate 4,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-17.1,"Communicated information and feelings openly, clearly and effectively. For teammate 1",Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-17.2,"Communicated information and feelings openly, clearly and effectively. For teammate 2",Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-17.3,"Communicated information and feelings openly, clearly and effectively. For teammate 3",Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-17.4,"Communicated information and feelings openly, clearly and effectively. For teammate 4",Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-18.1,Contributed expertise and effort in team activities. For teammate 1,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-18.2,Contributed expertise and effort in team activities. For teammate 2,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-18.3,Contributed expertise and effort in team activities. For teammate 3,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-18.4,Contributed expertise and effort in team activities. For teammate 4,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-19.1,Respected and valued other team members to bring out the best in one another. For teammate 1,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-19.2,Respected and valued other team members to bring out the best in one another. For teammate 2,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-19.3,Respected and valued other team members to bring out the best in one another. For teammate 3,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-19.4,Respected and valued other team members to bring out the best in one another. For teammate 4,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree"
-33,My team’s primary mode of communication to complete tasks outside the classroom for the project is…,Communication,qualitative,,4,
-38.1,How well have you improved in the element: ELEMENT_1,Individual Reflection,quantitative,-3 to 3,7,"-3 = much worse, 3 = much better"
-38.2,How well have you improved in the element: ELEMENT_2,Individual Reflection,quantitative,-3 to 3,7,"-3 = much worse, 3 = much better"
-38.3,How well have you improved in the element: ELEMENT_3,Individual Reflection,quantitative,-3 to 3,7,"-3 = much worse, 3 = much better"
-99.9,Please refer to your personalized feedback here,Individual Reflection,qualitative,No scale (qualitative),,No scale (qualitative)
+question_id,question,category,type,scale,out_of,notes,shorthand
+1,introduction and background,,,,,"FOR COMPLETE SCORING:  Option 1: 1 = strongly agree, 2 = agree, 3 = somewhat agree, 4 = neither agree nor disagree, 5 = somewhat disagree, 6 = disagree, 7 = strongly disagree Option 2: 1 = much better, 2 = moderately better, 3 = slightly better, 4 = about the same, 5 = slightly worse, 6 = moderately worse, 7 = much worse Option 3: 1 = always, 2 = most of the time, 3 = about half of the time, 4 = sometimes, 5 = never",
+2.1,Our team is clear about the shared goals for our work together,Goal Setting,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",SharedGoal
+2.2,We each know about one another's individual goals for our work together,Goal Setting,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",IndvGoal
+2.3,I feel supported by my teammates in the pursuit of my individual goals for this project,Goal Setting,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Support
+3,Please state in 1-2 sentences what you believe your team's shared goals are for this project.,Goal Setting,qualitative,No scale (qualitative),,No scale (qualitative),Communicate
+4.1,We have good communication amongst ourselves,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",
+4.2,We fairly distribute work amongst ourselves,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",WorkAlloc
+4.3,I am clear about the roles I play on my team,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Role
+4.4,I enjoy working with my teammates,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Enjoy
+5.1,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 1,Team Process,quantitative,1-100,100,"1 = no contribution, 100 = total contribution",ContributionPoints
+5.2,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 2,Team Process,quantitative,1-100,100,"1 = no contribution, 100 = total contribution",ContributionPoints
+5.3,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 3,Team Process,quantitative,1-100,100,"1 = no contribution, 100 = total contribution",ContributionPoints
+5.4,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 4,Team Process,quantitative,1-100,100,"1 = no contribution, 100 = total contribution",ContributionPoints
+6,Name one concrete and specific thing that your team did well that you will carry forward into future teams.,Individual Reflection,qualitative,No scale (qualitative),,No scale (qualitative),Didwell
+7,Name one concrete and specific thing that you would like your team to do differently.,Individual Reflection,qualitative,No scale (qualitative),,No scale (qualitative),DoDiff
+14.1,"For each of your teammates and yourself, write one line that describes their primary contribution to the team's work together. For teammate 1",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative),Contribute
+14.2,"For each of your teammates and yourself, write one line that describes their primary contribution to the team's work together. For teammate 2",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative),Contribute
+14.3,"For each of your teammates and yourself, write one line that describes their primary contribution to the team's work together. For teammate 3",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative),Contribute
+14.4,"For each of your teammates and yourself, write one line that describes their primary contribution to the team's work together. For teammate 4",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative),Contribute
+15.1,"For each of your teammates listed below, write one line that describes something you might like to see them do differently in the future. For teammate 1",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative),Improve
+15.2,"For each of your teammates listed below, write one line that describes something you might like to see them do differently in the future. For teammate 2",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative),Improve
+15.3,"For each of your teammates listed below, write one line that describes something you might like to see them do differently in the future. For teammate 3",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative),Improve
+15.4,"For each of your teammates listed below, write one line that describes something you might like to see them do differently in the future. For teammate 4",Teammate Contributions and Feedback,qualitative,No scale (qualitative),,No scale (qualitative),Improve
+16.1,Took initiative to help the team problem solve. For teammate 1,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Initiative
+16.2,Took initiative to help the team problem solve. For teammate 2,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Initiative
+16.3,Took initiative to help the team problem solve. For teammate 3,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Initiative
+16.4,Took initiative to help the team problem solve. For teammate 4,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Initiative
+17.1,"Communicated information and feelings openly, clearly and effectively. For teammate 1",Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Communicate
+17.2,"Communicated information and feelings openly, clearly and effectively. For teammate 2",Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Communicate
+17.3,"Communicated information and feelings openly, clearly and effectively. For teammate 3",Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Communicate
+17.4,"Communicated information and feelings openly, clearly and effectively. For teammate 4",Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Communicate
+18.1,Contributed expertise and effort in team activities. For teammate 1,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Expertise
+18.2,Contributed expertise and effort in team activities. For teammate 2,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Expertise
+18.3,Contributed expertise and effort in team activities. For teammate 3,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Experties
+18.4,Contributed expertise and effort in team activities. For teammate 4,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Expertise
+19.1,Respected and valued other team members to bring out the best in one another. For teammate 1,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Respect
+19.2,Respected and valued other team members to bring out the best in one another. For teammate 2,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Respect
+19.3,Respected and valued other team members to bring out the best in one another. For teammate 3,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Respect
+19.4,Respected and valued other team members to bring out the best in one another. For teammate 4,Teammate Contributions and Feedback,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Respect
+33,My team’s primary mode of communication to complete tasks outside the classroom for the project is…,Communication,qualitative,,4,,
+38.1,How well have you improved in the element: ELEMENT_1,Individual Reflection,quantitative,-3 to 3,7,"-3 = much worse, 3 = much better",ImproveAmt1
+38.2,How well have you improved in the element: ELEMENT_2,Individual Reflection,quantitative,-3 to 3,7,"-3 = much worse, 3 = much better",ImproveAmt2
+38.3,How well have you improved in the element: ELEMENT_3,Individual Reflection,quantitative,-3 to 3,7,"-3 = much worse, 3 = much better",ImproveAmt3
+99.9,Please refer to your personalized feedback here,Individual Reflection,qualitative,No scale (qualitative),,No scale (qualitative),

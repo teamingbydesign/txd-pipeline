@@ -1,11 +1,10 @@
-import os
-
 import pandas as pd
 import numpy as np
 
 # TODO: Alex to change this function into a class;
 #  utilize OOP methods and split this into helper functions to improve future debugging
 # TODO: Alex to add unit tests for this process and validation processes (other than current 1 exception case)
+
 
 # suggestion: move these mappings to another CSV to join with question_dictionary
 SEVEN_SCALE_MAPPINGS = {
@@ -77,9 +76,9 @@ def _handle_quantitative(
 
 
 def clean_qualtrics_data(
-        raw: str | os.PathLike,
-        roster: str | os.PathLike,
-        question_dictionary: str | os.PathLike,
+        raw_df: pd.DataFrame,
+        roster_df: pd.DataFrame,
+        question_dictionary_df: pd.DataFrame,
         needs_mapping: bool = True,
         needs_normalization: bool = True
 ) -> pd.DataFrame:
@@ -89,26 +88,16 @@ def clean_qualtrics_data(
     calculating metrics for the faculty report.
 
 
-    :param raw: Path of raw survey responses as csv
-    :param roster: Path of roster of students in class as csv
-    :param question_dictionary: Path of question descriptions (qualitative/quantitative, etc.) as csv
+    :param raw_df: dataframe of raw survey responses
+    :param roster_df: dataframe of roster of students in class as csv
+    :param question_dictionary_df: dataframe question descriptions (qualitative/quantitative, etc.) as csv
     :param needs_mapping: Flag that handles mapping of qualitative responses to quantitative columns
     :param needs_normalization: Flag that normalizes the quantitative values after mapping,
            can only be used if needs_mapping is True
     :return: DataFrame after all cleaning is done
     """
 
-    # assert all files are of .csv extension
-    assert all(
-        [os.path.splitext(filepath)[1] == '.csv'
-         for filepath in (raw, roster, question_dictionary)]
-    )
-
-    # Imports and Instantiations
-    # TODO: this has to get fixed, first row is repeat of headers, 2nd is random import stuff
-    raw_df = pd.read_csv(raw)[2:]
-    question_dictionary_df = pd.read_csv(question_dictionary)
-    roster_df = pd.read_csv(roster)
+    raw_df = raw_df[2:]
 
     # Subset raw data to just student email, student first name, student last name, and all question responses
     subset_data = raw_df.filter(regex=r'Email|First|last|Q\d+(_\d+)?', axis=1)
@@ -139,7 +128,6 @@ def clean_qualtrics_data(
         full_cleaned = _handle_quantitative(full_cleaned, question_dictionary_df, needs_normalization)
 
     # For NA values (students that didn't complete survey, left question empty), fill in with "No Response"
-    # TODO: impute by dtype of column rather than general "No Response"
     for col in full_cleaned:
         dt = full_cleaned[col].dtype
         if dt == 'object':

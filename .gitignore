@@ -2,3 +2,4 @@
 legacy-data-pipeline/.ipynb_checkpoints
 .idea
 **/__pycache__
+automation/report_gen/config.ini
