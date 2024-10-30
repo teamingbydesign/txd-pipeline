@@ -12,7 +12,7 @@ from upload_mongo import upload_df_to_mongodb
 
 
 cfg = configparser.ConfigParser()
-cfg.read('config.ini')
+cfg.read('report_gen\\config.ini')
 
 def prefix_translator(column_to_prefix: Dict[str, str], question: str) -> Optional[str]:
     if question in column_to_prefix:
@@ -96,7 +96,7 @@ def main(
     result.to_csv('report.csv')
 
     # upload to mongodb
-    mongo_uri = f"mongodb+srv//:{cfg['mongodb']['username']}:{cfg['mongodb']['password']}@{cfg['mongodb']['host']}"
+    mongo_uri = f"mongodb+srv://{cfg['mongodb']['username']}:{cfg['mongodb']['password']}@{cfg['mongodb']['host']}"
 
     upload_df_to_mongodb(
         df=result,
@@ -107,22 +107,22 @@ def main(
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument("roster_path")
-    parser.add_argument("question_dict_path")
-    parser.add_argument("raw_path")
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument("roster_path")
+    # parser.add_argument("question_dict_path")
+    # parser.add_argument("raw_path")
+    #
+    # args = parser.parse_args()
+    #
+    # main(
+    #     args.roster_path,
+    #     args.question_dict_path,
+    #     args.raw_path
+    # )
 
-    args = parser.parse_args()
 
     main(
-        args.roster_path,
-        args.question_dict_path,
-        args.raw_path
+        "E29_Qualtrics_Roster_EOS.csv",
+        "E29_QUESTION_DICTIONARY.csv",
+        "E29_PRECLEAN_CHECKIN03_RAW_TEXT.csv"
     )
-
-
-    # main(
-    #     "../E29_Qualtrics_Roster_EOS.csv",
-    #     "../E29_QUESTION_DICTIONARY.csv",
-    #     "../E29_PRECLEAN_CHECKIN03_RAW_TEXT.csv"
-    # )
