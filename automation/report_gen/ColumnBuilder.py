@@ -8,6 +8,7 @@ from typing import (
 
 from utils import *
 
+
 class ColumnBuilder:
     def __init__(
         self,
@@ -16,6 +17,7 @@ class ColumnBuilder:
         pd_function: Callable[..., pd.DataFrame | pd.Series | int | float],
         pd_function_args: List[Any]
     ):
+
         self.col_prefix = col_prefix
         self.col_suffix = col_suffix
         self.pd_function = pd_function

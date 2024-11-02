@@ -8,6 +8,15 @@ def upload_df_to_mongodb(
         collection_name: str,
         mongo_uri: str
 ):
+    """
+    Upload the resulting faculty report to a new collection in teamdb.
+
+    :param df: resulting faculty report
+    :param db_name: mongodb database to use
+    :param collection_name: new mongodb collection to use
+    :param mongo_uri: connection string with user/password auth
+    :return:
+    """
     # Connect to MongoDB
     client = MongoClient(mongo_uri)
     db = client[db_name]

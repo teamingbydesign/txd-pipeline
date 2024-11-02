@@ -1,5 +1,9 @@
 from utils import *
 
+# specify the column_builder_parameters here
+# make sure you pass the correct arguments for
+# any custom function in the last element of the
+# tuple
 pipe_params = [
     ('2.1', 'TeamAvg', None, None),
     ('2.1', 'ClassAvg', None, None),
