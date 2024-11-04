@@ -1,12 +1,12 @@
-import os
-import argparse
+import pandas as pd
+import numpy as np
 import configparser
 from typing import (
     Tuple,
     Optional,
-    Callable,
-    Any
+    Callable
 )
+from gdrive_import import retrieve_teaming_files
 from processing import clean_qualtrics_data
 from ColumnBuilder import *
 from report_definiton import pipe_params
@@ -15,6 +15,7 @@ from upload_mongo import upload_df_to_mongodb
 # read in configuration
 cfg = configparser.ConfigParser()
 cfg.read('report_gen\\config.ini')
+
 
 def prefix_translator(column_to_prefix: Dict[str, str], question: str) -> Optional[str]:
     """
@@ -39,7 +40,7 @@ def prefix_translator(column_to_prefix: Dict[str, str], question: str) -> Option
 
 def column_builder_pipe(
         df: pd.DataFrame,
-        column_builder_params: List[Tuple[str, str, Optional[Callable]], Optional[List[Any]]],
+        column_builder_params: List[Tuple[str, str, Optional[Callable], Optional[List[Any]]]],
         column_to_prefix: Dict[str, str]
 ) -> pd.DataFrame:
     """
@@ -84,27 +85,27 @@ def column_builder_pipe(
 
 
 def main(
-    roster_path: os.PathLike | str,
-    question_dict_path: os.PathLike | str,
-    raw_path: os.PathLike | str
+    class_name: str,
+    checkin_num: str,
 ):
     """
     Main function that handles all reading, operations, and writing of
     csv files. Basically invoke this to run the pipeline completely through.
 
-    :param roster_path:
-    :param question_dict_path:
-    :param raw_path:
+    :param class_name:
+    :param checkin_num:
     :return:
     """
-    assert all(
-        [os.path.splitext(filepath)[1] == '.csv'
-         for filepath in (raw_path, roster_path, question_dict_path)]
-    )
+    dataframes = retrieve_teaming_files(class_name, checkin_num)
+    raw = dataframes['raw']
+    roster = dataframes['roster']
+    dictionary = dataframes['question_dictionary']
 
-    roster = pd.read_csv(roster_path)
-    dictionary = pd.read_csv(question_dict_path)
-    raw = pd.read_csv(raw_path)
+    # this is temp fix for differing column names
+    roster = roster.rename(columns={'GroupNumber': 'TeamNumber'})
+
+    if raw is None or roster is None or dictionary is None:
+        raise Exception("Could not find all dataframes")
 
     full_cleaned = clean_qualtrics_data(raw, roster, dictionary)
 
@@ -119,7 +120,6 @@ def main(
     dictionary.set_index('question_id', inplace=True)
     dictionary.index = dictionary.index.map(str)
     column_to_prefix = dict(dictionary['shorthand'])
-    print(column_to_prefix)
 
     result = column_builder_pipe(full_cleaned, pipe_params, column_to_prefix)
 
@@ -136,28 +136,13 @@ def main(
     upload_df_to_mongodb(
         df=result,
         db_name=cfg['mongodb']['db'],
-        collection_name=cfg['mongodb']['collection'],
+        collection_name=f'{class_name}_CHECKIN{checkin_num}_REPORT',
         mongo_uri=mongo_uri,
     )
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument("roster_path")
-    parser.add_argument("question_dict_path")
-    parser.add_argument("raw_path")
-
-    args = parser.parse_args()
-
     main(
-        args.roster_path,
-        args.question_dict_path,
-        args.raw_path
+        "OCONNELL",
+        "01"
     )
-
-
-    # main(
-    #     "E29_Qualtrics_Roster_EOS.csv",
-    #     "E29_QUESTION_DICTIONARY.csv",
-    #     "E29_PRECLEAN_CHECKIN03_RAW_TEXT.csv"
-    # )
