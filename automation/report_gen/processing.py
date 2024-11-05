@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import re
 
 # TODO: Alex to change this function into a class;
 #  utilize OOP methods and split this into helper functions to improve future debugging
@@ -37,6 +38,7 @@ FIVE_SCALE_MAPPINGS = {
 def _handle_quantitative(
         full_cleaned: pd.DataFrame,
         question_dictionary: pd.DataFrame,
+        needs_mapping: bool,
         needs_normalization: bool
 ) -> pd.DataFrame:
     """
@@ -52,21 +54,22 @@ def _handle_quantitative(
     quantitative_questions = list(
         question_dictionary[question_dictionary["type"] == "quantitative"]["question_id"]
     )
+    print(quantitative_questions)
 
     # convert qualitative response to quantity based on 5-scale or 7-scale mapping
     for question in quantitative_questions:
         denominator = int(question_dictionary[question_dictionary["question_id"] == question]["out_of"].iloc[0])
         question_str = str(question)
+        if needs_mapping:
+            if denominator == 7:
+                full_cleaned[question_str] = full_cleaned[question_str].str.upper().apply(lambda x: SEVEN_SCALE_MAPPINGS[x])
+                if needs_normalization:
+                    full_cleaned[question_str] = pd.to_numeric(full_cleaned[question_str]) - 4
 
-        if denominator == 7:
-            full_cleaned[question_str] = full_cleaned[question_str].str.upper().apply(lambda x: SEVEN_SCALE_MAPPINGS[x])
-            if needs_normalization:
-                full_cleaned[question_str] = pd.to_numeric(full_cleaned[question_str]) - 4
-
-        elif denominator == 5:
-            full_cleaned[question_str] = full_cleaned[question_str].str.upper().apply(lambda x: FIVE_SCALE_MAPPINGS[x])
-            if needs_normalization:
-                full_cleaned[question_str] = pd.to_numeric(full_cleaned[question_str]) - 3
+            elif denominator == 5:
+                full_cleaned[question_str] = full_cleaned[question_str].str.upper().apply(lambda x: FIVE_SCALE_MAPPINGS[x])
+                if needs_normalization:
+                    full_cleaned[question_str] = pd.to_numeric(full_cleaned[question_str]) - 3
 
         # if question is quantitative but dtype is a str, change data type
         else:
@@ -104,6 +107,7 @@ def clean_qualtrics_data(
 
     # Replace question column names in subset data with X.Y instead of QX_Y
     subset_data.columns = [col.replace('Q', '').replace('_', '.') for col in list(subset_data.columns)]
+    subset_data.columns = [col + ".0" if re.match(r'^[0-9]', col) and "." not in col else col for col in list(subset_data.columns)]
 
     # Instantiate cleaned, a pointer of subset_data
     cleaned = subset_data
@@ -118,14 +122,14 @@ def clean_qualtrics_data(
                             left_on=roster_email_field,
                             right_on=cleaned_email_field)
     full_cleaned = full_cleaned[~full_cleaned["TeamNumber"].isna()]
+    print(full_cleaned.columns)
 
     # Sort df by TeamNumber then TeammateNumber starting from Team1
     full_cleaned = full_cleaned.sort_values(["TeamNumber", "TeammateNumber"]).reset_index().drop("index", axis=1)
 
     # If the raw data has "Agree"/"Disagree" in quantitative question columns,
     # map these to integers 1-X where X is "out_of"
-    if needs_mapping:
-        full_cleaned = _handle_quantitative(full_cleaned, question_dictionary_df, needs_normalization)
+    full_cleaned = _handle_quantitative(full_cleaned, question_dictionary_df, needs_mapping, needs_normalization)
 
     # For NA values (students that didn't complete survey, left question empty), fill in with "No Response"
     for col in full_cleaned:

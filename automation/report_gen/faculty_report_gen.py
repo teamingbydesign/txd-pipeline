@@ -9,12 +9,12 @@ from typing import (
 from gdrive_import import retrieve_teaming_files
 from processing import clean_qualtrics_data
 from ColumnBuilder import *
-from report_definiton import pipe_params
+from report_definition import pipe_params
 from upload_mongo import upload_df_to_mongodb
 
 # read in configuration
 cfg = configparser.ConfigParser()
-cfg.read('report_gen\\config.ini')
+cfg.read('config.ini')
 
 
 def prefix_translator(column_to_prefix: Dict[str, str], question: str) -> Optional[str]:
@@ -107,11 +107,14 @@ def main(
     if raw is None or roster is None or dictionary is None:
         raise Exception("Could not find all dataframes")
 
-    full_cleaned = clean_qualtrics_data(raw, roster, dictionary)
+    full_cleaned = clean_qualtrics_data(raw, roster, dictionary, needs_mapping=False)
 
     # convert TeamNumber to float
     for df in (roster, full_cleaned):
-        df['TeamNumber'] = df['TeamNumber'].str.replace('Team ', '', regex=False).astype(float)
+        if df['TeamNumber'].dtype == 'object':
+            df['TeamNumber'] = df['TeamNumber'].str.replace('Team ', '', regex=False).astype(float)
+        else:
+            df['TeamNumber'] = df['TeamNumber'].astype(float)
 
     # convert TeammateNumber to float
     roster['TeammateNumber'] = roster['TeammateNumber'].astype(float)
