@@ -54,7 +54,6 @@ def _handle_quantitative(
     quantitative_questions = list(
         question_dictionary[question_dictionary["type"] == "quantitative"]["question_id"]
     )
-    print(quantitative_questions)
 
     # convert qualitative response to quantity based on 5-scale or 7-scale mapping
     for question in quantitative_questions:
@@ -122,7 +121,6 @@ def clean_qualtrics_data(
                             left_on=roster_email_field,
                             right_on=cleaned_email_field)
     full_cleaned = full_cleaned[~full_cleaned["TeamNumber"].isna()]
-    print(full_cleaned.columns)
 
     # Sort df by TeamNumber then TeammateNumber starting from Team1
     full_cleaned = full_cleaned.sort_values(["TeamNumber", "TeammateNumber"]).reset_index().drop("index", axis=1)
@@ -135,6 +133,9 @@ def clean_qualtrics_data(
     for col in full_cleaned:
         dt = full_cleaned[col].dtype
         if dt == 'object':
-            full_cleaned[col].fillna('No Response', inplace=True)
+            full_cleaned[col] = full_cleaned[col].fillna('No Response')
+
+    # full_cleaned['TeamNumber'] = full_cleaned['TeamNumber'].astype('int')
+    full_cleaned['TeammateNumber'] = full_cleaned['TeammateNumber'].astype('int')
 
     return full_cleaned
