@@ -7,6 +7,7 @@ from typing import (
 )
 
 from utils import *
+import pandas as pd
 
 
 class ColumnBuilder:

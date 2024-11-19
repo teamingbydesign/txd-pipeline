@@ -3,3 +3,6 @@ legacy-data-pipeline/.ipynb_checkpoints
 .idea
 **/__pycache__
 automation/report_gen/config.ini
+automation/report_gen/credentials.json
+automation/report_gen/settings.yaml
+automation/report_gen/client_secret.json

@@ -87,6 +87,7 @@ def column_builder_pipe(
 def main(
     class_name: str,
     checkin_num: str,
+    upload_to_mongo: bool,
 ):
     """
     Main function that handles all reading, operations, and writing of
@@ -101,23 +102,20 @@ def main(
     roster = dataframes['roster']
     dictionary = dataframes['question_dictionary']
 
-    # this is temp fix for differing column names
-    roster = roster.rename(columns={'GroupNumber': 'TeamNumber'})
-
     if raw is None or roster is None or dictionary is None:
         raise Exception("Could not find all dataframes")
 
     full_cleaned = clean_qualtrics_data(raw, roster, dictionary, needs_mapping=False)
 
     # convert TeamNumber to float
-    for df in (roster, full_cleaned):
-        if df['TeamNumber'].dtype == 'object':
-            df['TeamNumber'] = df['TeamNumber'].str.replace('Team ', '', regex=False).astype(float)
-        else:
-            df['TeamNumber'] = df['TeamNumber'].astype(float)
+    # for df in (roster, full_cleaned):
+    #     if df['TeamNumber'].dtype == 'object':
+    #         df['TeamNumber'] = df['TeamNumber'].str.replace('Team ', '', regex=False).astype(float)
+    #     else:
+    #         df['TeamNumber'] = df['TeamNumber'].astype(float)
 
-    # convert TeammateNumber to float
-    roster['TeammateNumber'] = roster['TeammateNumber'].astype(float)
+    # # convert TeammateNumber to float
+    # roster['TeammateNumber'] = roster['TeammateNumber'].astype(float)
 
     # column to prefix is stored in dictionary `shorthand` col
     dictionary.set_index('question_id', inplace=True)
@@ -125,6 +123,16 @@ def main(
     column_to_prefix = dict(dictionary['shorthand'])
 
     result = column_builder_pipe(full_cleaned, pipe_params, column_to_prefix)
+
+
+    # get alignment levels
+    align_cols = list(dictionary.loc[dictionary['used_in_percentile'], 'shorthand'])
+    result = get_alignment_level(result, align_cols, bin_names=None)
+
+    # round all the values in float types
+    for col in result.columns:
+        if pd.api.types.is_float_dtype(result[col]):
+            result[col] = result[col].round(decimals=2)
 
     # cleanup columns and do post-processing
     cols_to_remove = ~full_cleaned.columns.str.contains(r'[0-9]', regex=True)
@@ -134,18 +142,19 @@ def main(
     result.to_csv('report.csv')
 
     # upload to mongodb
-    mongo_uri = f"mongodb+srv://{cfg['mongodb']['username']}:{cfg['mongodb']['password']}@{cfg['mongodb']['host']}"
-
-    upload_df_to_mongodb(
-        df=result,
-        db_name=cfg['mongodb']['db'],
-        collection_name=f'{class_name}_CHECKIN{checkin_num}_REPORT',
-        mongo_uri=mongo_uri,
-    )
+    if upload_to_mongo:
+        mongo_uri = f"mongodb+srv://{cfg['mongodb']['username']}:{cfg['mongodb']['password']}@{cfg['mongodb']['host']}"
+        upload_df_to_mongodb(
+            df=result,
+            db_name=cfg['mongodb']['db'],
+            collection_name=f'{class_name}_CHECKIN{checkin_num}_REPORT',
+            mongo_uri=mongo_uri,
+        )
 
 
 if __name__ == '__main__':
     main(
         "TAYLOR",
-        "01"
+        "01",
+        False
     )

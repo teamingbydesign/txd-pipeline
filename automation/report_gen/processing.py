@@ -99,10 +99,17 @@ def clean_qualtrics_data(
     :return: DataFrame after all cleaning is done
     """
 
-    raw_df = raw_df[2:]
+    # trim duplicated column headers
+    if raw_df.iloc[0, 1] == raw_df.columns[0]:
+        raw_df = raw_df.iloc[1:, :]
+    # trim importid like row
+    if 'ImportId' in raw_df.iloc[0, 1]:
+        raw_df = raw_df.iloc[1:, 1]
+
+    raw_df = raw_df.rename(columns={'Unnamed: 0': 'FullNameLast'})
 
     # Subset raw data to just student email, student first name, student last name, and all question responses
-    subset_data = raw_df.filter(regex=r'Email|First|last|Q\d+(_\d+)?', axis=1)
+    subset_data = raw_df.filter(regex=r'Email|First|Last|Name|Q\d+(_\d+)?', axis=1)
 
     # Replace question column names in subset data with X.Y instead of QX_Y
     subset_data.columns = [col.replace('Q', '').replace('_', '.') for col in list(subset_data.columns)]
@@ -114,16 +121,25 @@ def clean_qualtrics_data(
     # Join in TeamNumber and TeammateNumber from roster; drop rows of metadata
     roster_email_field = [col for col in list(roster_df.columns) if 'EMAIL' in col.upper()][0]
     cleaned_email_field = [col for col in list(cleaned.columns) if 'EMAIL' in col.upper()][0]
+    roster_df[roster_email_field] = roster_df[roster_email_field].str.lower()
+    cleaned[cleaned_email_field] = cleaned[cleaned_email_field].str.lower()
 
-    full_cleaned = pd.merge(roster_df[[roster_email_field, 'TeamNumber', 'TeammateNumber']],
+    full_cleaned = pd.merge(roster_df[["FullNameLast", 'TeamName', 'TeammateNumber']],
                             cleaned,
                             how="outer",
-                            left_on=roster_email_field,
-                            right_on=cleaned_email_field)
-    full_cleaned = full_cleaned[~full_cleaned["TeamNumber"].isna()]
+                            left_on="FullNameLast",
+                            right_on="FullNameLast")
+
+    # full_cleaned = pd.merge(roster_df[[roster_email_field, 'GroupNumber', 'TeammateNumber']],
+    #                         cleaned,
+    #                         how="outer",
+    #                         left_on=roster_email_field,
+    #                         right_on=cleaned_email_field)
+
+    full_cleaned = full_cleaned[~full_cleaned["TeamName"].isna()]
 
     # Sort df by TeamNumber then TeammateNumber starting from Team1
-    full_cleaned = full_cleaned.sort_values(["TeamNumber", "TeammateNumber"]).reset_index().drop("index", axis=1)
+    full_cleaned = full_cleaned.sort_values(["TeamName", "TeammateNumber"]).reset_index().drop("index", axis=1)
 
     # If the raw data has "Agree"/"Disagree" in quantitative question columns,
     # map these to integers 1-X where X is "out_of"
