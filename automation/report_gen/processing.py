@@ -116,7 +116,7 @@ def clean_qualtrics_data(
     subset_data.columns = [col + ".0" if re.match(r'^[0-9]', col) and "." not in col else col for col in list(subset_data.columns)]
 
     # Instantiate cleaned, a pointer of subset_data
-    cleaned = subset_data
+    cleaned = subset_data.copy()
 
     # Join in TeamNumber and TeammateNumber from roster; drop rows of metadata
     roster_email_field = [col for col in list(roster_df.columns) if 'EMAIL' in col.upper()][0]

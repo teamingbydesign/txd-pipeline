@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 
+import warnings
 from typing import Optional
 
 def _keep_numeric_cols(df: pd.DataFrame, question: str):
@@ -28,8 +29,9 @@ def get_teammates_average(df: pd.DataFrame, question: str):
             (apply_df['TeamName'] == team_number) & (apply_df['TeammateNumber'] != teammate_number),
             f'{question}.{teammate_number}'
         ]
-
-        return np.nanmean(apply_df)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", category=RuntimeWarning)
+            return np.nanmean(apply_df)
 
     return df.apply(apply_helper, axis=1, apply_df=df)
 
@@ -47,6 +49,9 @@ def get_teammates_std(df: pd.DataFrame, question: str):
 
 
 def get_response_by_teammate_number(df: pd.DataFrame, teammate_number: int, question: str):
+    if f'{question}.{teammate_number}' not in df.columns:
+        return df.loc[df['TeammateNumber'] == teammate_number, question]
+
     return df.loc[:, f'{question}.{teammate_number}']
 
 
@@ -93,10 +98,7 @@ def get_alignment_level(df: pd.DataFrame, align_cols: list[str], bin_names: Opti
     indexes = np.searchsorted(bins, totals, side='left')
 
     result = pd.Series(np.vectorize(lambda x: bin_names[x])(indexes))
-    print(result)
-
 
     result_df = pd.DataFrame.from_dict({'TeamName': df_by_team.index.values, 'OverallAlignment': result})
 
-    print(result_df.shape)
     return df.merge(result_df, how='inner', left_on='TeamName', right_on='TeamName')
