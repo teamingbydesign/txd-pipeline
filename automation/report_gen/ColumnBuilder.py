@@ -83,12 +83,14 @@ class PerMemberFunc(ColumnBuilder):
         team_size = max(df['TeammateNumber'].unique())
 
         for i in range(1, team_size+1):
+            old_size = len(df)
             df = ColumnBuilder(
                 self.col_prefix,
                 str(i),
                 get_response_by_teammate_number,
                 [i] + self.pd_function_args
             )(df)
+            assert old_size == len(df)
 
         return df
 

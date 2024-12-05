@@ -99,14 +99,12 @@ def clean_qualtrics_data(
     :return: DataFrame after all cleaning is done
     """
 
-    # trim duplicated column headers
-    if raw_df.iloc[0, 1] == raw_df.columns[0]:
+    # trim duplicated column headers and importid like row
+    if raw_df.iloc[0, 0].replace(' ', '') == raw_df.columns[0]:
         raw_df = raw_df.iloc[1:, :]
     # trim importid like row
-    if 'ImportId' in raw_df.iloc[0, 1]:
-        raw_df = raw_df.iloc[1:, 1]
-
-    raw_df = raw_df.rename(columns={'Unnamed: 0': 'FullNameLast'})
+    if 'ImportId' in raw_df.iloc[0, 0]:
+        raw_df = raw_df.iloc[1:, :]
 
     # Subset raw data to just student email, student first name, student last name, and all question responses
     subset_data = raw_df.filter(regex=r'Email|First|Last|Name|Q\d+(_\d+)?', axis=1)
@@ -124,7 +122,16 @@ def clean_qualtrics_data(
     roster_df[roster_email_field] = roster_df[roster_email_field].str.lower()
     cleaned[cleaned_email_field] = cleaned[cleaned_email_field].str.lower()
 
-    full_cleaned = pd.merge(roster_df[["FullNameLast", 'TeamName', 'TeammateNumber']],
+    # need FullNameLast in cleaned dataframe, so generate on the fly
+    first_name_col = cleaned.columns[cleaned.columns.str.contains('FirstName')][0]
+    last_name_col = cleaned.columns[cleaned.columns.str.contains('LastName')][0]
+    if 'FullNameLast' not in cleaned.columns:
+        cleaned['FullNameLast'] = cleaned.apply(lambda r: r[last_name_col] + ', ' + r[first_name_col], axis=1)
+
+    #deduplicate on full name
+    cleaned = cleaned.drop_duplicates(subset=['FullNameLast'], keep='last')
+
+    full_cleaned = pd.merge(roster_df[["FullNameLast", 'Email', 'TeamName', 'GroupNumber', 'TeammateNumber']],
                             cleaned,
                             how="outer",
                             left_on="FullNameLast",

@@ -79,7 +79,7 @@ def column_builder_pipe(
         else:
             cb = ColumnBuilder(prefix, suffix, func, func_args)
 
-        df = df.pipe(cb)
+        df = cb.__call__(df)
 
     return df
 
@@ -105,8 +105,8 @@ def main(
     if raw is None or roster is None or dictionary is None:
         raise Exception("Could not find all dataframes")
 
-    full_cleaned = clean_qualtrics_data(raw, roster, dictionary, needs_mapping=False)
-
+    full_cleaned = clean_qualtrics_data(raw, roster, dictionary, needs_mapping=False, needs_normalization=False)
+    full_cleaned.to_csv('../test.csv')
     # convert TeamNumber to float
     # for df in (roster, full_cleaned):
     #     if df['TeamNumber'].dtype == 'object':
@@ -123,7 +123,6 @@ def main(
     column_to_prefix = dict(dictionary['shorthand'])
 
     result = column_builder_pipe(full_cleaned, pipe_params, column_to_prefix)
-
 
     # get alignment levels
     align_cols = list(dictionary.loc[dictionary['used_in_percentile'], 'shorthand'])
@@ -154,7 +153,7 @@ def main(
 
 if __name__ == '__main__':
     main(
-        "TAYLOR",
-        "01",
+        "OCONNELL",
+        "02",
         True
     )

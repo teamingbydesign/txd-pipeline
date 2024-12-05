@@ -60,9 +60,9 @@ def retrieve_teaming_files(class_name: str, checkin_num: str) -> Dict[str, Optio
     for file in class_files_list:
         if not file['title'].endswith(".csv"):
             continue
-        if "ROSTER" in file['title']:
+        if f"ROSTER_{checkin_num}" in file['title']:
             results['roster'] = _read_as_csv(file)
-        elif "QUESTION_DICTIONARY" in file['title']:
+        elif f"QUESTION_DICTIONARY_{checkin_num}" in file['title']:
             results['question_dictionary'] = _read_as_csv(file)
         elif f"CHECKIN{checkin_num}_RAW" in file['title']:
             results['raw'] = _read_as_csv(file)

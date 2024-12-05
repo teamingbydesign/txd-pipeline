@@ -52,7 +52,32 @@ def get_response_by_teammate_number(df: pd.DataFrame, teammate_number: int, ques
     if f'{question}.{teammate_number}' not in df.columns:
         return df.loc[df['TeammateNumber'] == teammate_number, question]
 
-    return df.loc[:, f'{question}.{teammate_number}']
+    team_sizes = df[['TeamName']].groupby('TeamName').size()
+    names = df['FullNameLast']
+    df = df.loc[df['TeammateNumber'] == teammate_number, df.columns.str.contains(f'^{question}|Team', regex=True)]
+
+    #this is for debugging help when there is issue w/ data
+    seen_indexes = set()
+    result = [[], []]
+    for index, row in df.iterrows():
+        team_size = team_sizes[row['TeamName']]
+
+        for i in range(1, team_size+1):
+            if f'{question}.{i}' not in df.columns:
+                break
+            if index + i - teammate_number in seen_indexes:
+                print(index, i, teammate_number)
+            seen_indexes.add(index + i - teammate_number)
+            result[0].append(index + i - teammate_number)
+            result[1].append(row[f'{question}.{i}'])
+
+    result_series = pd.Series(result[1])
+    result_series.index = result[0]
+    result_df = result_series.to_frame()
+
+    result_df = result_df.join(names).set_index('FullNameLast')
+
+    return result_df
 
 
 def get_my_response(df: pd.DataFrame, question: str) -> pd.Series:
