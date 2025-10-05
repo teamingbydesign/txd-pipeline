@@ -1,0 +1,22 @@
+question_id,question_id_str,question,category,type,scale,out_of,notes,shorthand,used_in_percentile,gpt_dynamic_question
+1,,introduction and background,,,,,"FOR COMPLETE SCORING:  Option 1: 1 = strongly agree, 2 = agree, 3 = somewhat agree, 4 = neither agree nor disagree, 5 = somewhat disagree, 6 = disagree, 7 = strongly disagree Option 2: 1 = much better, 2 = moderately better, 3 = slightly better, 4 = about the same, 5 = slightly worse, 6 = moderately worse, 7 = much worse Option 3: 1 = always, 2 = most of the time, 3 = about half of the time, 4 = sometimes, 5 = never",,FALSE,FALSE
+2.1,Q2_1,Our team is clear about the shared goals for our work together,Goal Setting,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",SharedGoal,TRUE,FALSE
+2.2,Q2_2,We each know about one another's individual goals for our work together,Goal Setting,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",IndvGoal,TRUE,FALSE
+2.3,Q2_3,I feel supported by my teammates in the pursuit of my individual goals for this project,Goal Setting,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Support,TRUE,FALSE
+3,Q3,Please state in 1-2 sentences what you believe your team's shared goals are for this project.,Goal Setting,qualitative,,,,TeamGoalWritten,FALSE,FALSE
+4.1,Q4_1,We have good communication amongst ourselves,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Communicate,TRUE,FALSE
+4.2,Q4_2,We fairly distribute work amongst ourselves,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",WorkAlloc,TRUE,FALSE
+4.3,Q4_3,I am clear about the roles I play on my team,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Role,TRUE,FALSE
+4.4,Q4_4,I enjoy working with my teammates,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Enjoy,TRUE,FALSE
+4.5,Q4_5,We have effective approaches for decision-making and conflict resolution,Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",ConflictRes,TRUE,FALSE
+4.6,Q4_6,"We have efficient meetings, including allocation of roles during those meetings",Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Efficiency,TRUE,FALSE
+4.7,Q4_7,"I feel comfortable expressing my ideas, questions or concerns with my team.",Team Process,quantitative,-3 to 3,7,"-3 = strongly disagree, 3 = strongly agree",Expression,TRUE,FALSE
+5.1,Q5_1,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 1,Team Process,quantitative,0-100,100,"0 = 0% contribution, 100 = total contribution",ContributionPoints,FALSE,FALSE
+5.2,Q5_2,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 2,Team Process,quantitative,0-100,100,"0 = 0% contribution, 100 = total contribution",ContributionPoints,FALSE,FALSE
+5.3,Q5_3,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 3,Team Process,quantitative,0-100,100,"0 = 0% contribution, 100 = total contribution",ContributionPoints,FALSE,FALSE
+5.4,Q5_4,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 4,Team Process,quantitative,0-100,100,"0 = 0% contribution, 100 = total contribution",ContributionPoints,FALSE,FALSE
+5.5,Q5_5,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 5,Team Process,quantitative,0-100,100,"0 = 0% contribution, 100 = total contribution",ContributionPoints,FALSE,FALSE
+5.6,Q5_6,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 6,Team Process,quantitative,0-100,100,"0 = 0% contribution, 100 = total contribution",ContributionPoints,FALSE,FALSE
+5.7,Q5_7,Please allocate 100 points across yourself and your teammates for your contributions to the work of the team. For teammate 7,Team Process,quantitative,0-100,100,"0 = 0% contribution, 100 = total contribution",ContributionPoints,FALSE,FALSE
+6,Q6,Name one concrete and specific thing that your team did well that you will carry forward into future teams.,Individual Reflection,qualitative,,,,DidWell,FALSE,FALSE
+7,Q7,Name one concrete and specific thing that you would like your team to do differently.,Individual Reflection,qualitative,,,,DoDiff,FALSE,FALSE
