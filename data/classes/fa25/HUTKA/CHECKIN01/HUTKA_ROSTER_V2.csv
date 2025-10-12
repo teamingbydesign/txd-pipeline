@@ -1,0 +1,44 @@
+FirstName,LastName,Email,TeamNumber,TeammateNumber,Teammate1,Teammate2,Teammate3,Teammate4,Teammate5
+Mackenzie,Cramer,mackenzie.hanh@berkeley.edu,1,1,Mackenzie Cramer,Evan Haas,Dinah Lee,Catherine McQueen,Mindy Tsai
+Evan,Haas,evanhaas@berkeley.edu,1,2,Mackenzie Cramer,Evan Haas,Dinah Lee,Catherine McQueen,Mindy Tsai
+Dinah,Lee,jiwondinah.lee@berkeley.edu,1,3,Mackenzie Cramer,Evan Haas,Dinah Lee,Catherine McQueen,Mindy Tsai
+Catherine,McQueen,mcqueen@berkeley.edu,1,4,Mackenzie Cramer,Evan Haas,Dinah Lee,Catherine McQueen,Mindy Tsai
+Mindy,Tsai,mindytsai@berkeley.edu,1,5,Mackenzie Cramer,Evan Haas,Dinah Lee,Catherine McQueen,Mindy Tsai
+Diara,Bagayeva,diarabagayeva@berkeley.edu,2,1,Diara Bagayeva,Adeline Li,Sanjida Quarratul Ain,Ivy Zhang,
+Adeline,Li,adeline_zwl@berkeley.edu,2,2,Diara Bagayeva,Adeline Li,Sanjida Quarratul Ain,Ivy Zhang,
+Sanjida,Quarratul Ain ,qurratulain.508@berkeley.edu,2,3,Diara Bagayeva,Adeline Li,Sanjida Quarratul Ain,Ivy Zhang,
+Ivy,Zhang,ivyzhang@berkeley.edu,2,4,Diara Bagayeva,Adeline Li,Sanjida Quarratul Ain,Ivy Zhang,
+Anam,Ahmed,anamahmed1229@berkeley.edu,3,1,Anam Ahmed,Amy Bezek,Abbey Mui,Lauren Tang,
+Amy,Bezek,abezek@berkeley.edu,3,2,Anam Ahmed,Amy Bezek,Abbey Mui,Lauren Tang,
+Abbey,Mui,abbey.mui@berkeley.edu,3,3,Anam Ahmed,Amy Bezek,Abbey Mui,Lauren Tang,
+Lauren,Tang,ltang16@berkeley.edu,3,4,Anam Ahmed,Amy Bezek,Abbey Mui,Lauren Tang,
+Sunny,Hsu,sunny_hsu@berkeley.edu,5,1,Sunny Hsu,Jan Henrik Magnus Jacobsen,Tala Salman,Weiru Ye,
+Jan Henrik,Magnus Jacobsen,henrikjacobsen@berkeley.edu,5,2,Sunny Hsu,Jan Henrik Magnus Jacobsen,Tala Salman,Weiru Ye,
+Tala,Salman,tala.salman@berkeley.edu,5,3,Sunny Hsu,Jan Henrik Magnus Jacobsen,Tala Salman,Weiru Ye,
+Weiru,Ye,weiru_ye@berkeley.edu,5,4,Sunny Hsu,Jan Henrik Magnus Jacobsen,Tala Salman,Weiru Ye,
+Rachita,Bisht,rachitabisht@berkeley.edu,7,1,Rachita Bisht,Catherine Davodi,Gianella Guerrero Cardenas,Rheanna Mahboobani,
+Catherine,Davodi,cdavodi@berkeley.edu,7,2,Rachita Bisht,Catherine Davodi,Gianella Guerrero Cardenas,Rheanna Mahboobani,
+Gianella,Guerrero Cardenas,giannella_guerrero@berkeley.edu,7,3,Rachita Bisht,Catherine Davodi,Gianella Guerrero Cardenas,Rheanna Mahboobani,
+Rheanna,Mahboobani,rheanna.gm@berkeley.edu,7,4,Rachita Bisht,Catherine Davodi,Gianella Guerrero Cardenas,Rheanna Mahboobani,
+Chelsea,Chen,chelsea_chen@berkeley.edu,8,1,Chelsea Chen,Jesselin Elza,Longyu Gong,Deborah Qu,
+Jesselin,Elza,jesselin.elza@berkeley.edu,8,2,Chelsea Chen,Jesselin Elza,Longyu Gong,Deborah Qu,
+Longyu,Gong,longyu.gong@berkeley.edu,8,3,Chelsea Chen,Jesselin Elza,Longyu Gong,Deborah Qu,
+Deborah,Qu,deborahqu@berkeley.edu,8,4,Chelsea Chen,Jesselin Elza,Longyu Gong,Deborah Qu,
+Riska,Ardilla Putri,riskardlla@berkeley.edu,9,1,Riska Ardilla Putri,Ottie Breen,Gujri Singh,Octavia Smith,Jaime Wong Pagano
+Ottie,Breen,ottie@berkeley.edu,9,2,Riska Ardilla Putri,Ottie Breen,Gujri Singh,Octavia Smith,Jaime Wong Pagano
+Gujri,Singh,gujri.singh@berkeley.edu,9,3,Riska Ardilla Putri,Ottie Breen,Gujri Singh,Octavia Smith,Jaime Wong Pagano
+Octavia,Smith,octavia.smith08@berkeley.edu,9,4,Riska Ardilla Putri,Ottie Breen,Gujri Singh,Octavia Smith,Jaime Wong Pagano
+Jaime,Wong Pagano,jaime_wongp@berkeley.edu,9,5,Riska Ardilla Putri,Ottie Breen,Gujri Singh,Octavia Smith,Jaime Wong Pagano
+Devynn,Li Belter,dlibelter@berkeley.edu,10,1,Devynn Li Belter,Ruiyang Lin,Ernest Makaika,Yingjian Wu,
+Ruiyang,Lin,royan_lam@berkeley.edu,10,2,Devynn Li Belter,Ruiyang Lin,Ernest Makaika,Yingjian Wu,
+Ernest,Makaika,emakaika@berkeley.edu,10,3,Devynn Li Belter,Ruiyang Lin,Ernest Makaika,Yingjian Wu,
+Yingjian,Wu,kimkimwu@berkeley.edu,10,4,Devynn Li Belter,Ruiyang Lin,Ernest Makaika,Yingjian Wu,
+Anika,Bhagavatula,anikabhagavatula@berkeley.edu,11,1,Anika Bhagavatula,Steven Feng,Quinton King,James Ning,
+Steven,Feng,steven.feng@berkeley.edu,11,2,Anika Bhagavatula,Steven Feng,Quinton King,James Ning,
+Quinton,King,quintonking@berkeley.edu,11,3,Anika Bhagavatula,Steven Feng,Quinton King,James Ning,
+James,Ning,jamesning@berkeley.edu,11,4,Anika Bhagavatula,Steven Feng,Quinton King,James Ning,
+Dan,Hickey,dan_hickey@berkeley.edu,18,1,Dan Hickey,Victoria Li,Mikah Nelson,Pamela Quartson,Scarlett Xu
+Victoria,Li,vi2jia@berkeley.edu,18,2,Dan Hickey,Victoria Li,Mikah Nelson,Pamela Quartson,Scarlett Xu
+Mikah,Nelson,mikah@berkeley.edu,18,3,Dan Hickey,Victoria Li,Mikah Nelson,Pamela Quartson,Scarlett Xu
+Pamela,Quartson,pamela.quartson@berkeley.edu,18,4,Dan Hickey,Victoria Li,Mikah Nelson,Pamela Quartson,Scarlett Xu
+Scarlett,Xu,yiyao@berkeley.edu,18,5,Dan Hickey,Victoria Li,Mikah Nelson,Pamela Quartson,Scarlett Xu
